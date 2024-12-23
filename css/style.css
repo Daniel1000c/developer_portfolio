@@ -1,0 +1,29 @@
+/**General Formatting**/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/**End of General Formatting**/
+
+/**Font Faces**/
+@font-face {
+    font-family: 'Goldman-Bold';
+    src: url(../fonts/Goldman-Bold.ttf);
+}
+/**End of Font Faces**/
+
+/**Header Formatting**/
+
+/*Format header tag*/
+header {
+    padding: 20px;
+}
+
+/*Format header h1 tag*/
+header h1{
+    font-family: 'Goldman-Bold';
+    font-size: 3.8em;
+    letter-spacing: 2px;
+}
+/**End of Header Formatting**/

@@ -11,7 +11,25 @@
     font-family: 'Goldman-Bold';
     src: url(../fonts/Goldman-Bold.ttf);
 }
+
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
 /**End of Font Faces**/
+
+/**Keyframe Formatting**/
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/**End of Keyframe Formatting**/
 
 /**Header Formatting**/
 
@@ -21,6 +39,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /*Create fade down animation*/
+    animation: fadeDown 1s ease;
 }
 
 /*Format header h1 tag*/
@@ -30,9 +50,39 @@ header h1{
     letter-spacing: 2px;
 }
 
+/*Format header h1 span tag*/
+header h1 span {
+    color: lightcoral;
+}
+
 /*Format menu i tag*/
 header i {
     font-size: 6em;
     cursor: none;
 }
 /**End of Header Formatting**/
+
+/**Footer Formatting**/
+
+/*Format footer tag*/
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: #3F4045;
+    color: #ffffff;
+    font-size: 2.2em;
+    font-family: 'Roboto-Regular';
+}
+
+/*Format footer link*/
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.5s ease;/*Create smooth hover transition*/
+}
+
+/*Format footer link hover*/
+footer a:hover {
+    color: red;
+}
+/**End of Footer Formatting**/

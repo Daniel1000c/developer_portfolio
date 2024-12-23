@@ -18,6 +18,9 @@
 /*Format header tag*/
 header {
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /*Format header h1 tag*/
@@ -25,5 +28,11 @@ header h1{
     font-family: 'Goldman-Bold';
     font-size: 3.8em;
     letter-spacing: 2px;
+}
+
+/*Format menu i tag*/
+header i {
+    font-size: 6em;
+    cursor: none;
 }
 /**End of Header Formatting**/

@@ -1,0 +1,55 @@
+# Node.js / React
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+/dist/
+build/
+
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+venv/
+env/
+*.db
+*.sqlite3
+*.log
+
+# PHP
+/vendor/
+*.log
+*.cache
+*.phar
+composer.lock
+
+# jQuery (common files)
+jquery/
+*.min.js
+*.map
+
+# SQL
+*.sql
+*.sql.gz
+
+# JavaScript (General)
+*.js.map
+*.ts
+*.jsx
+*.tsx
+
+# IDEs / Editors
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Operating System
+.DS_Store
+Thumbs.db
+
+# Others
+*.bak
+*.swp
+*.swo

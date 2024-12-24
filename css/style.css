@@ -62,6 +62,21 @@ header i {
 }
 /**End of Header Formatting**/
 
+/**Home Section Formatting**/
+.homeFormat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    background-image: 
+        linear-gradient(rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0.3)),
+        url(../images/creatorImg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 40vh;
+}
 /**Contact Information Formatting**/
 .contactFormat {
     display: flex;
@@ -129,8 +144,6 @@ header i {
     margin-bottom: 20px;
     padding: 20px;
 }
-
-/*Format select arrow size*/
 
 /*Format form submit button*/
 .contactContainer input[type="submit"] {

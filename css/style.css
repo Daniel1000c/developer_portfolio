@@ -62,21 +62,178 @@ header i {
 }
 /**End of Header Formatting**/
 
+/**Contact Information Formatting**/
+.contactFormat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    background-color: #f8fbfc;
+}
+
+/*Format section title*/
+.contactFormat h2 {
+    font-size: 6em;
+    font-family: sans-serif;
+    font-weight: bolder;
+    margin-bottom: 50px;
+}
+
+/*Format section title span*/
+.contactFormat h2 span {
+    color: lightcoral;
+}
+
+/*Format contact container*/
+.contactContainer {
+    display: flex;
+    gap: 60px;
+    flex-direction: column;
+}
+
+/*Format contact form labels*/
+.contactContainer label {
+    font-size: 3em;
+    font-family: monospace;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+/*Format contact form inputs*/
+.contactContainer input[type="text"],
+.contactContainer input[type="email"],
+.contactContainer input[type="tel"],
+.contactContainer textarea {
+   display: inline-block;
+   width: 100%;
+   font-size: 3.5em;
+   border-radius: 8px;
+   border: 1px solid black;
+   margin-bottom: 20px;
+}
+
+/*Format input placeholder*/
+.contactContainer input::placeholder, .contactContainer textarea::placeholder {
+    font-style: italic;
+}
+
+/*Format contact form select box*/
+.contactContainer select {
+    display: inline-block;
+    width: 100%;
+    font-size: 3.5em;
+    font-family: sans-serif;
+    border-radius: 8px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+/*Format select arrow size*/
+
+/*Format form submit button*/
+.contactContainer input[type="submit"] {
+    display: inline-block;
+    width: 100%;
+    font-size: 3.5em;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: lightcoral;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: 0.5s ease;/*Smooth hover transition*/
+}
+
+/*Format form submit button hover*/
+.contactContainer input[type="submit"]:hover {
+    background-color: white;
+    color: lightcoral;
+    border: 5px solid lightcoral;
+}
+
+/*Format creator information headers*/
+.contactContainer .creatorInfo h3 {
+    font-size: 4.5em;
+    font-family: monospace;
+    font-weight: bolder;
+}
+
+.contactContainer .creatorInfo h4 {
+    font-size: 3em;
+    font-family: 'Roboto-Regular';
+    color: rgb(86, 86, 86);
+}
+
+/*Format creator contact information text*/
+.contactContainer .creatorInfo p {
+    font-size: 2.2em;
+    font-family: 'Roboto-Regular';
+    letter-spacing: 2px;
+    color: darkgray;
+}
+
+/*Format creator information a links*/
+.contactContainer .creatorInfo a {
+    font-size: 2.2em;
+    font-family: 'Roboto-Regular';
+    letter-spacing: 2px;
+    color: darkgray;
+    text-decoration: none;
+    transition: 0.5s ease;/*Smooth hover transition*/
+}
+
+/*Format creator information a links hover*/
+.contactContainer .creatorInfo a:hover {
+    color: lightcoral;
+}
+
+/*Format social media links*/
+.contactContainer .creatorInfo .socials {
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+/*Format social media links*/
+.contactContainer .creatorInfo .socials a {
+    color: black;
+}
+
+.contactContainer .creatorInfo .socials a i {
+    font-size: 2.3em;
+    border: 5px solid black;
+    padding: 12px;
+    border-radius: 50%;
+    transition: 0.5s ease;/*Smooth hover transition*/
+}
+
+
+/*Format social media links hover*/
+.contactContainer .creatorInfo .socials a:hover i {
+    color: lightcoral;
+    border: 5px solid lightcoral;
+}
+
+/**End of Contact Information Formatting**/
+
 /**Footer Formatting**/
 
 /*Format footer tag*/
 footer {
     text-align: center;
     padding: 40px;
-    background-color: #3F4045;
-    color: #ffffff;
-    font-size: 2.2em;
+    color: rgb(86, 86, 86);
+    font-size: 1.8em;
     font-family: 'Roboto-Regular';
 }
 
 /*Format footer link*/
 footer a {
-    color: #ffffff;
+    color: rgb(86, 86, 86);
     text-decoration: none;
     transition: 0.5s ease;/*Create smooth hover transition*/
 }

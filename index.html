@@ -17,7 +17,64 @@
             <i class='bx bx-menu'></i>
         </header>
         <main>
-            
+            <!--Create a contact creator section-->
+            <section id="contact" class="contactFormat">
+                <h2>Get in <span>Touch</span></h2>
+
+                <!--Create contact form and creator info containers-->
+                <div class="contactContainer">
+                    <div class="contactForm">
+                        <!--Create contact form-->
+                        <form action="" method="post">
+                            <!--Prompt the user for Full name-->
+                            <label for="name">Full Name:</label><br>
+                            <input type="text" name="name" id="name"><br>
+
+                            <!--Prompt the user for Email-->
+                            <label for="email">Email:</label><br>
+                            <input type="email" name="email" id="email"><br>
+
+                            <!--Prompt the user for phone number-->
+                            <label for="phone">Phone Number:</label><br>
+                            <input type="tel" name="phone" id="phone"><br>
+
+                            <!--Create a select option for message subject-->
+                            <label for="subject">Subject:</label><br>
+                            <select name="subject" id="subject">
+                                <option value="Site Feedback">Site Feedback</option>
+                                <option value="Web Services">Web Services</option>
+                                <option value="Business Inquiry">Business Inquiry</option>
+                                <option value="Other">Other</option>
+                            </select><br>
+
+                            <!--Prompt the user for a message-->
+                            <label for="message">Message:</label><br>
+                            <textarea name="message" id="message" cols="30" rows="5"></textarea><br>
+
+                            <!--Create a submit button-->
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                    <div class="creatorInfo">
+                        <h3>Daniel Velez</h3>
+                        <p>Front-end Developer</p>
+
+                        <h4>Phone</h4>
+                        <p>+1 (305) 555-1234</p>
+
+                        <h4>Email</h4>
+                        <p>velezdaniel516@gmail</p>
+
+                        <h4>Website</h4>
+                        <a href="#">Placeholder Link</a>
+                        <!--Create social media links-->
+                        <div class="socials">
+                            <a href="https://www.github.com/daniel1000c" target="_blank" rel="noreferrer"><i class='bx bxl-github'></i></a>
+                            <a href="https://www.linkedin.com/in/daniel-velez-544a24323/" target="_blank" rel="noreferrer"><i class='bx bxl-linkedin'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
         <footer>
             &copy; 2024 Daniel Velez | All Rights Reserved | <a href="privacy.html">Privacy Policy</a>

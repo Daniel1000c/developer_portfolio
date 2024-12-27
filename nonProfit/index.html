@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title>Broward Rescue</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/x-icon" href="favicon/favicon.ico"><!--link to favicon for web tab-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'><!--Link to box icons external stylesheet-->
+        <script src="scripts/script.js"></script>
+    </head>
+    <body>
+        <header>
+            <!--Insert organization logo-->
+            <img src="images/browardRescueFixedSpelling.png" alt="Broward Rescue" usemap="#imageMap">
+
+            <map name="imageMap">
+                <area target="_self" alt="Rescue" title="Broward Rescue" href="index.html" coords="0,1,500,498" shape="rect">
+            </map>
+            
+            <nav aria-label="Web Page Navigation">
+                <!--Create donation link-->
+                <a href="donate.html">Donate</a>
+
+                <!--Create hamburger menu icon-->
+                <div class="hamburgerMenu">
+                    <i class='bx bx-menu' onclick="openMenu()"></i>
+                </div>
+                
+                <!--Create links-->
+                <ul class="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="programs.html">Programs/Services</a></li>
+                </ul>
+            </nav>
+            
+        </header>
+        <main>
+            <!--Create about section container-->
+            <section class="aboutContainer">
+                <h2>Compassion.Care.Community</h2>
+                <!--About page statement-->
+                <p>At Broward Rescue, we're passionate about rescuing and rehoming animals in need. Join us in making a difference and giving every pet a second chance.</p>
+
+                <a href="about.html">Learn More &#8594;</a>
+            </section>
+
+            <!--Create three small image links for user-->
+            <div class="imgLinkContainer">
+                <div class="imgLink">
+                    <img src="images/dogResting.jpg" alt="Pet Adoptions">
+
+                    <a href="programs.html">Programs&#8594;</a>
+                </div>
+                <div class="imgLink">
+                    <img src="images/catMilk.jpg" alt="Services">
+
+                    <a href="contact.html">Contact Us&#8594;</a>
+                </div>
+                <div class="imgLink">
+                    <img src="images/animalVolunteer.jpg" alt="Volunteer">
+
+                    <a href="about.html">About Us&#8594;</a>
+                </div>
+            </div>
+
+            <!--Create Mission Statement/vision, call to action and programs section section-->
+            <section class="overContainer" aria-label="Overview Section"><!--Create aria tags-->
+                <div class="overviewItem">
+                    <h2>It's All About Them</h2>
+                    <h4>Fostering Families and Communities</h4>
+
+                    <!--container statement-->
+                    <p>Broward Rescue is a non-profit organization dedicated to rescuing and rehoming animals in need. 
+                        We provide a safe haven for abandoned, abused, and homeless pets, ensuring they receive the care and love they deserve. 
+                        Our mission is to match these animals with caring families, creating lasting bonds and giving them a second chance at a happy life.
+                    </p>
+                </div>
+                <div class="overviewItem">
+                    <div class="overImgLink">
+                        <img src="images/dogShelter.jpg" alt="Dogs">
+                        <h2>Dogs</h2>
+                        <p>Adopt a Dog and Start a Journey of Endless Adventures, Tail Wags, and Unwavering Loyalty. Adoption pages were provided by Broward Humane Society.</p>
+
+                        <a href="https://humanebroward.com/all-pets/?type=Dog&pg=1" target="_blank">Adopt</a>
+                    </div>
+
+                    <div class="overImgLink">
+                        <img src="images/catShelter.jpg" alt="Cats">
+                        <h2>Cats</h2>
+                        <p>Adopt a Cat Today and Experience the joy of a gentle Companion by your Side. Adoption pages were provided by Broward Humane Society.</p>
+
+                        <a href="https://humanebroward.com/all-pets/?type=Cat&pg=1" target="_blank">Adopt</a>
+                    </div>
+
+                    <div class="overImgLink">
+                        <img src="images/ferretShelter.jpg" alt="Other Pets">
+                        <h2>Other Pets</h2>
+                        <p>Adopt a unique pet and discover the charm and personality of a non-traditional companion! Adoption pages were provided by Broward Humane Society.</p>
+
+                        <a href="https://humanebroward.com/all-pets/?type=Rabbit&pg=1" target="_blank">Adopt</a>
+                    </div>
+                </div>
+            </section>
+
+            <!--Create img slider flyer container-->
+            <div class="flyerContainer">
+                <!--Create prev button-->
+                <button class="prev" aria-label="Previous Flyer">&lt;</button>
+
+                <div class="flyerSlider">
+                    <img src="images/dogWalkFlyer.png" alt="Dog Walking Services" class="flyer">
+                    <img src="images/adoptionFlyer.png" alt="Pet Adoptions" class="flyer">
+                    <img src="images/petContestFlyer.png" alt="Pet Contest" class="flyer">
+                    <img src="images/volunteerFlyer.png" alt="Volunteer Programs" class="flyer">
+                    <img src="images/petCareFlyer.png" alt="Broward Rescue Pet Care" class="flyer">
+                    <img src="images/cartoonPetFlyer.png" alt="Broward Rescue Animal Care" class="flyer">
+                </div>
+
+                <!--Create next slide-->
+                <button class="next" aria-label="Next Flyer">&gt;</button>
+            </div>
+
+            <!--Create donate section-->
+            <div class="donateContainer">
+                <a href="donate.html">Donate</a>
+            </div>
+            
+            <!--Create news letter-->
+            <section class="newsContainer">
+                <h2>Broward Rescue Newsletter</h2>
+
+                <!--Insert newsletter tagline-->
+                <p>Have you met our pups, kitties, and playful pets? Don't miss out on the latest adoptions news and events.
+                    Stay tuned on animal rescue update, heartfelt stories, and upcoming organization events. Sign up 
+                    now to get all the latest news on our furry friends straight to your inbox.
+                </p>
+                <!--Create newsletter form-->
+                <form action="https://professorcooke.org/forms/processform.php">
+                    <div class="inputContainer">
+
+                        <div class="formField">
+                            <!--Prompt for first name-->
+                            <input type="text" name="firstName" id="firstName" placeholder="John..." aria-label="First Name">
+                            <label for="firstName">FirstName:</label>
+                        </div>
+
+                        <div class="formField">
+                            <!--Prompt for last name-->
+                            <input type="text" name="lastName" id="lastName" placeholder="Doe..." aria-label="Last Name"> 
+                            <label for="lastName">LastName:</label>
+                        </div>
+                    </div>
+
+                    <div class="formField fullWidth">
+                        <input type="email" name="email" id="email" placeholder="Email Address..." aria-label="Email Address">
+                    </div>
+                    
+
+                    <!--Create submit button-->
+                    <input type="submit" value="Subscribe">
+                </form>
+            </section>
+
+            
+        </main>
+        <footer aria-label="Broward Rescue Footer">
+
+            <!--Create logo container-->
+            <div class="footerLogoContainer">
+                <img src="images/browardRescueFixedSpelling.png" alt="Broward Rescue">
+                
+
+                <!--Create social media icons-->
+                <div class="socialMediaContainer">
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="https://github.com/Daniel1000c/website-Portfolio" target="_blank" aria-label="Github"><i class='bx bxl-github'></i></a> 
+                    <a href="https://www.youtube.com" target="_blank" aria-label="Youtube"><i class='bx bxl-youtube'></i></a>
+                    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                </div>
+
+            </div>
+
+            <div class="qckLinkContainer">
+                <!--Create quick link items-->
+                <div class="qckLinkItem">
+                    <h3>Contact Us</h3>
+
+                    <p>305.527.0765</p>
+                    <p>12172 SW 52nd CT <br> Cooper City, FL 33330</p>
+                    <p><a href="mailto:velezdaniel516@gmail">Email Us</a></p>
+                </div>
+                <div class="qckLinkItem">
+                    <h3>Quicklinks</h3>
+
+                    <a href="about.html">About Us</a>
+                    <a href="programs.html">Programs/Services</a>
+                    <a href="donate.html">Donate</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                
+            </div>
+            <p>&copy; 2024 Broward Rescue | <a href="privacy.html">Privacy Policy</a></p>
+        </footer>
+    </body>
+</html>

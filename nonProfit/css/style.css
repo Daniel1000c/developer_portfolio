@@ -1,0 +1,1906 @@
+/*General Formatting*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*End of general formatting*/
+
+/*Keyframe formatting*/
+@keyframes slideLeft {
+    0% {
+        transform: translateX(-300%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*Format header*/
+header {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+}
+
+header img:hover {
+    cursor: pointer;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+/*Format header donate button*/
+header nav a {
+    text-decoration: none;
+    background-color: rgba(135, 206, 250, 0.8);
+    padding: 25px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border-radius: 8px;
+    margin-right: 30px;
+    transition: 0.5s ease;/*Add smooth transition hover*/
+}
+
+header a:hover {
+    background-color: rgba(70, 130, 180, 0.8);
+}
+
+/*Format hamburger menu icon*/
+header nav .bx-menu {
+    font-size: 50px;
+    color: lightblue;
+}
+
+/*Create hover animation for hamburger menu*/
+header nav .bx-menu:hover {
+    cursor: pointer;
+}
+
+nav .navLinks {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    padding-top: 15px;
+    z-index: 1000;
+    transform: translateX(100%);
+    background-image: url(../images/animalPrint.png);
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+nav .navLinks li {
+    list-style-type: none;
+    margin-bottom: 50px;
+}
+
+nav .navLinks li a {
+   background-color: transparent; 
+   color: limegreen;
+   font-weight: bolder;
+   font-size: 40px;
+   border-radius: 8px;
+   transition: 0.5s ease;/*Add smooth transition hover*/
+   text-align: left;
+}
+
+nav .navLinks li a:hover {
+    color: rgb(70, 130, 180);
+}
+
+/*Show links when hamburger menu icon is clicked*/
+header nav.active .navLinks {
+   transform: translateX(0);
+   opacity: 1;
+}
+
+
+/*End of header formatting*/
+
+/*Section Formatting*/
+/*Create pie chart graph*/
+.impactGraphContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+/*Create flyer slide container*/
+.flyerContainer {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.flyerSlider {
+    width: 100%;
+    position: relative;
+}
+
+/*Format slider icons*/
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bolder;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    outline: none;
+    z-index: 10;
+}
+
+.next {
+    right: 20px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*Format slide imgs*/
+.flyerContainer .flyerSlider .flyer {
+    display: none;
+    width: 100%;
+    border: 5px solid lightblue;
+}
+
+/*Show first slide image by default*/
+.flyerContainer .flyerSlider .flyer:first-child {
+    display: block;
+}
+
+
+.aboutContainer {
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+    flex-direction: column;
+    padding: 65px;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)), 
+        url(../images/aboutImg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vh;
+}
+
+.aboutContainer h2 {
+    font-family: sans-serif;
+    font-size: 45px;
+    color: white;
+}
+
+.aboutContainer p {
+    color: white;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 15px;
+    width: 750px;
+}
+
+/*Format about link*/
+.aboutContainer a {
+    font-family: sans-serif;
+    color: lightblue;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 35px;
+    margin-top: 15px;
+    transition: 0.5s ease;/*Create smooth hover transition*/
+}
+
+.aboutContainer a:hover {
+    color: rgb(70, 130, 180);
+    cursor: pointer;
+}
+
+/*Format imgLink container*/
+.imgLinkContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px;
+    gap: 20px
+}
+
+/*Format imgs*/
+.imgLinkContainer .imgLink img{
+    width: 250px;
+    margin-bottom: 25px;
+}
+
+/*Format img links*/
+.imgLinkContainer .imgLink a {
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: sans-serif;
+    color: lightskyblue;
+    font-size: 30px;
+    transition: 0.5s ease;/*Create smooth hover transition*/
+}
+
+.imgLinkContainer .imgLink a:hover {
+    color: rgb(70, 130, 180);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/*Format overview container*/
+.overContainer {
+    margin: 35px;
+}
+
+.overContainer .overviewItem h2 {
+    font-family: sans-serif;
+    font-size: 40px;
+    color: darkslategrey;
+    margin-bottom: 20px;
+}
+
+.overContainer .overviewItem h4 {
+    font-size: 25px;
+    color: darkcyan;
+    margin-bottom: 15px;
+}
+
+.overContainer .overviewItem p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    color: darkcyan;
+    width: 900px;
+    font-size: 15px;
+}
+
+.overContainer .overviewItem .overImgLink {
+    margin-bottom: 40px;
+}
+/*Format section imgs */
+.overContainer .overviewItem .overImgLink img {
+    width: 890px;
+    margin-bottom: 30px;
+}
+
+.overContainer .overviewItem .overImgLink  h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/*Format img p tags*/
+.overContainer .overviewItem .overImgLink p {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: darkcyan;
+    font-weight: lighter;
+}
+
+/*Format img links*/
+.overContainer .overviewItem .overImgLink a {
+    display: inline-block;
+    width: 200px;
+    text-decoration: none;
+    background-color: transparent;
+    color: darkslategrey;
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    border: 1px solid black;
+    transition: 0.5s ease;/*Create smooth hover transition*/
+}
+
+.overContainer .overviewItem .overImgLink a:hover {
+    color: lightskyblue;
+    border: 1px solid lightskyblue;
+}
+
+/*Format news letter section*/
+.newsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 35px;
+    background-color: lightgray;
+    padding: 25px;
+}
+
+.newsContainer h2 {
+    font-family: sans-serif;
+    font-size: 45px;
+    color: white;
+}
+
+/*Format newsletter p tag*/
+.newsContainer p {
+    line-height: 1.5;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.newsContainer form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/*Format input fields*/
+.newsContainer form .inputContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 40px;
+    margin-top: 5px;
+}
+
+.newsContainer form .inputContainer .formField {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Format labels*/
+.newsContainer form .inputContainer .formField label {
+    margin-top: 5px;
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+/*Format inputs*/
+.newsContainer form .inputContainer .formField input {
+    padding: 25px;
+    font-size: 25px;
+    border: none;
+    border-radius: 8px;
+}
+
+/*Format input placeholders*/
+.newsContainer form .inputContainer .formField input::placeholder{
+    opacity: 0.5;
+    font-style: italic;
+    padding-left: 5px;
+}
+
+/*Format input focus*/
+.newsContainer form .inputContainer .formField input:focus {
+    outline: none;
+}
+
+/*Format email input*/
+.fullWidth {
+    width: 100%;
+}
+
+.fullWidth input {
+    width: 100%;
+    padding: 25px;
+    border-radius: 8px;
+    border: none;
+    font-size: 25px;
+}
+
+.fullWidth input::placeholder {
+    opacity: 0.5;
+    font-style: italic;
+}
+
+.fullWidth input:focus {
+    outline: none;
+}
+
+
+/*Format button*/
+.newsContainer form input[type="submit"] {
+    padding: 25px;
+    display: inline-block;
+    width: 150px;
+    border-radius: 8px;
+    color: white;
+    border: none;
+    font-weight: bolder;
+    font-size: 20px;
+    background-color: lightskyblue;
+    transition: 0.5s ease;/*Create smooth hover transition*/
+    margin: 0 auto;
+}
+
+.newsContainer form input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: rgb(70, 130, 180);
+}
+
+/*Format about us img container*/
+.introImg {
+    background-image: url(../images/aboutUsCat.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 23vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+/*Format about img heading*/
+.introImg h2 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 50px;
+    margin-left: 100px;
+}
+
+/*Format mission section*/
+.missionStatement {
+    margin: 35px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+/*Format mission heading*/
+.missionStatement .missionItemText h2 {
+    color: lightskyblue;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 55px;
+    margin-bottom: 50px;
+    text-decoration: underline;
+}
+
+.missionStatement .missionItemText p {
+    line-height: 1.5;
+    font-family: sans-serif;
+    font-size: 20px;
+    color: darkslategray;
+    margin-bottom: 25px;
+}
+
+/*Format first letter of first p tag to be big and bold*/
+.missionStatement .missionItemText .dropCap:first-letter {
+    font-size: 3em;
+    line-height: 0;
+}
+
+/*Format mission quicklinks header*/
+.missionStatement .quickLinks {
+    margin-top: 25px;
+    align-self: flex-start;
+}
+
+.missionStatement .quickLinks h4 {
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.missionStatement .quickLinks .missionQckLink ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.missionStatement .quickLinks .missionQckLink ul li a{
+    text-decoration: none;
+    color: lightskyblue;
+    font-weight: bolder;
+    font-family: sans-serif;
+    font-size: 20px;
+    transition: 0.5s ease;/*Add smooth hover transition*/
+}
+
+.missionStatement .quickLinks .missionQckLink ul li a:hover {
+    color: rgb(70, 130, 180);
+}
+
+/*Format member section*/
+.membersContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 35px;
+    background-color: darkgreen;
+}
+
+/*Format header*/
+.membersContainer h2 {
+    font-family: sans-serif;
+    font-size: 50px;
+    color: lightskyblue;
+}
+
+.membersContainer img {
+    margin: auto;
+    width: 400px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.membersContainer .memberCardContainer .memberCards {
+    background-color: lightskyblue;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.membersContainer .memberCardContainer .memberCards h3 {
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+}
+
+/*Format video section*/
+.videoContainer {
+    padding: 25px;
+    background-color: #6B7D7D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoContainer iframe {
+    max-width: 100%;
+    max-height: 100%;
+    border: none;
+}
+/*Format testimonial container*/
+.testimonials { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+}
+
+/*Format creator img*/
+.testimonials img {
+    width: 200px;
+    height: 190px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 4px solid lightskyblue;
+}
+
+/*Format headings*/
+.testimonials h4 {
+    font-size: 30px;
+    font-family: sans-serif;
+    color: lightskyblue;
+    font-weight: bolder;
+}
+
+.testimonials h5 {
+    font-family: sans-serif;
+    font-weight: lighter;
+    color: lightskyblue;
+    margin-top: 5px;
+}
+
+/*Format testimonials blockquote tag*/
+.testimonials blockquote { 
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 30px;
+    width: 500px;
+    line-height: 1.5;
+    margin-top: 10px;
+    position: relative;
+    quotes: "“" "”";
+    padding: 15px;
+}
+
+/*Format opening tag*/
+.testimonials blockquote::before {
+    content: open-quote;
+    font-size: 50px;
+    color: lightskyblue;
+    position: absolute;
+    left: -30px;
+    top: -10px;
+}
+
+.testimonials blockquote::after {
+    content: close-quote;
+    font-size: 50px;
+    position: absolute;
+    color: lightskyblue;
+    right: 130px;
+    bottom: -10px;
+}
+
+/*Format donate section*/
+.donateContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/donateBackground.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 15vh;
+}
+
+/*Format donate button*/
+.donateContainer a {
+    text-decoration: none;
+    background-color: lightskyblue;
+    padding: 25px;
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    border-radius: 8px;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    border: 1px solid black;
+    transition: 0.5s ease;/*Create smooth hover transition*/
+}
+
+.donateContainer a:hover {
+    background-color: rgb(70, 130, 180);
+}
+
+/*Google maps section formatting*/
+.googleMapContainer {
+    background-image: url(../images/vecteezy_cat-paw-seamless-pattern-animal-footstep-vector-pattern-on_34132301.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+/*Format contact container*/
+
+/*Format contact header*/
+.contactHeader {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-image: url(../images/contactHeader.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 20vh;
+}
+
+.contactHeader h2 {
+    font-family: sans-serif;
+    color: white;
+    font-size: 40px;
+    margin-left: 100px;
+}
+
+.contactInfoContainer {
+    margin: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+    flex-direction: column;
+}
+
+/*Formt contact info text items*/
+.contactInfoContainer .contactItemText h2 {
+    font-family: sans-serif;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.contactInfoContainer .contactItemText h2 span {
+    color: lightskyblue;
+}
+
+/*Format contact p tag*/
+.contactInfoContainer .contactItemText p {
+    font-family: sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/*Format contact information heading*/
+.contactInfoContainer .contactItemText .contactInformation h4 {
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contactInfoContainer .contactItemText .contactInformation p {
+    font-size: 15px;
+}
+/*Format contact information link*/
+.contactInfoContainer .contactItemText .contactInformation a {
+    font-family: sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: lightskyblue;
+    transition: 0.5s ease;/*Create smooth hover transition*/
+}
+
+.contactInfoContainer .contactItemText .contactInformation a:hover {
+    color: rgb(70, 130, 180);
+    text-decoration: underline;
+}
+
+/*Format contact form section*/
+.contactForm {
+    margin-top: 25px;
+}
+
+/*Format contact form header*/
+.contactForm h2 {
+    font-family: sans-serif;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.contactForm h2 span {
+    color: lightskyblue;
+}
+
+/*Format contact form*/
+.contactInfoContainer .contactForm .contactFormFormat label {
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+
+.contactInfoContainer .contactForm .contactFormFormat input[type="text"],
+.contactInfoContainer .contactForm .contactFormFormat input[type="email"]{
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid lightskyblue;
+    border-radius: 8px;
+    display: inline-block;
+    width: 460px;
+    margin-top: 8px;
+}
+
+.contactInfoContainer .contactForm .contactFormFormat input::placeholder {
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/*Format textarea*/
+.contactInfoContainer .contactForm .contactFormFormat textarea {
+    border-radius: 8px;
+    border: 1px solid lightskyblue;
+    margin-bottom: 25px;
+    margin-top: 8px;
+}
+
+/*Format submit button*/
+.contactInfoContainer .contactForm .contactFormFormat input[type="submit"] {
+    border: none;
+    padding: 22px;
+    border-radius: 8px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    background-color: lightskyblue;
+    transition: 0.5s ease;/*Create smooth hover transition*/
+}
+
+.contactInfoContainer .contactForm .contactFormFormat input[type="submit"]:hover {
+    border: 1px solid lightskyblue;
+    color: lightskyblue;
+    background-color: transparent;
+}
+
+/*Format programs header container*/
+.programsHeader {
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+    flex-direction: column;
+    margin: 35px;
+}
+
+/*Format header titles*/
+.programsHeader h2 {
+    font-family: sans-serif;
+    font-size: 50px;
+    color: lightskyblue;
+    margin-bottom: 15px;
+    animation: slideLeft 1s ease;/*Create slide from left animation*/
+}
+
+.programsHeader h3 {
+    font-family: sans-serif;
+    font-size: 40px;
+    color: darkslategray;
+    animation: slideLeft 1.4s ease;/*Create slide from left animation*/
+}
+
+.programsHeader p{
+    margin-top: 20px;
+    line-height: 1.5;
+    font-family: sans-serif;
+    font-size: 20px;
+    animation: slideLeft 2s ease;/*Create slideleft animation*/
+}
+
+/*Format program header img*/
+.programsHeader img {
+    margin-top: 30px;
+    border-radius: 50%;
+    animation: appear 2.5s ease;/*Create appear animation*/
+}
+
+/*Format program card container*/
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 35px;
+    background-color: lightskyblue;
+    padding: 25px;
+}
+
+.cardContainer h2 {
+    font-family: sans-serif;
+    font-size: 40px;
+    color: darkslategray;
+    font-weight: bolder;
+    border-bottom: 15px dotted darkslategray;
+}
+
+/*Format card grid*/
+.cardContainer .cardGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/*Format images*/
+.cardContainer .cardGrid .card img {
+    width: 400px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+/*Format cards*/
+.cardContainer .cardGrid .card {
+    background-color: white;
+    border-radius: 8px;
+    transition: 0.5s ease;/*Create smooth scale hover animation*/
+}
+
+.cardContainer .cardGrid .card h4 {
+    font-family: sans-serif;
+    margin-top: 5px;
+    padding-left: 5px;
+    font-size: 25px;
+    color: darkslategray;
+}
+
+.cardContainer .cardGrid .card p {
+    line-height: 1.5;
+    font-family: sans-serif;
+    font-size: 16px;
+    padding: 5px;
+    color: lightskyblue;
+    font-weight: bolder;
+}
+
+.cardContainer .cardGrid .card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/*Format impact container*/
+.impactContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #3DA35D;
+    padding: 25px;
+}
+
+.impactContainer h2 {
+    font-family: sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+/*Format impact container img*/
+.impactContainer img {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 2px solid #3DA35D;
+    width: 800px;
+    border-radius: 8px;
+}
+
+/*Format donation container*/
+.donationContainer {
+    margin: 35px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+/*Format donation header section img*/
+.donationHeader {
+    background-image: url(../images/dogDonations.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 20vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.donationHeader h2 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 50px;
+    margin-left: 100px;
+}
+
+/*Format donationItemText headers*/
+.donationContainer .donateTextItem h2 {
+    font-family: sans-serif;
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: darkslategray;
+    border-bottom: 5px dotted darkslategray;
+    width: 420px;
+}
+
+.donationContainer .donateTextItem h3 {
+    margin-bottom: 8px;
+    color: lightskyblue;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+/*Format donate item text statements*/
+.donationContainer .donateTextItem p {
+    line-height: 1.5;
+    font-family: monospace;
+    font-size: 16px;
+    color: darkslategray;
+    margin-bottom: 10px;
+}
+
+/*Format donation form container*/
+.donationContainer .donateFormContainer {
+    padding: 30px;
+    border: 2px solid lightskyblue;
+    border-radius: 8px;
+}
+
+/*Format donation header*/
+.donationContainer .donateFormContainer h2 {
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-bottom: 25px;
+    color: lightskyblue;
+}
+
+/*Format donation form label elements*/
+.donationContainer .donateFormContainer label {
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+    color: black;
+}
+
+/*Format radio buttons*/
+.radioBtns input[type="radio"] {
+    display: none;
+    margin-bottom: 15px;
+}
+
+.radioBtns label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: lightskyblue;
+    margin: 5px;
+    font-family: sans-serif;
+    font-size: 14px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.5s ease;/*Create smooth hover transition*/
+}
+
+.radioBtns  label:hover {
+    background-color: transparent;
+    border: 1px solid lightskyblue;
+    color: lightskyblue;
+}
+
+/*Format donation form email label*/
+.donationContainer .donateFormContainer input[type="email"] {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid lightskyblue;
+}
+
+/*Format donation form email placeholder*/
+.donationContainer .donateFormContainer input[type="email"]::placeholder {
+    font-style: italic;
+    opacity: 0.5;
+}
+
+/*Format donation form phone input*/
+.donationContainer .donateFormContainer input[type="tel"] {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid lightskyblue;
+}
+
+/*Format donation form phone placeholder*/
+.donationContainer .donateFormContainer input[type="tel"]::placeholder {
+    font-style: italic;
+    opacity: 0.5;
+}
+
+/*Format donation form month input*/ 
+.donationContainer .donateFormContainer input[type="month"] {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid lightskyblue;
+    display: inline-block;
+    width: 195px;
+}
+
+/*Format donation form selection input*/
+.donationContainer .donateFormContainer select {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid lightskyblue;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+
+/*Format donation form text input*/
+.donationContainer .donateFormContainer input[type="text"] {
+    border: 1px solid lightskyblue;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.donationContainer .donateFormContainer input[type="text"]::placeholder {
+    font-style: italic;
+    opacity: 0.5;
+}
+/*Format donation form text area*/
+.donationContainer .donateFormContainer textarea {
+    margin-top: 15px;
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid lightskyblue;
+}
+
+/*Format textarea placeholder*/
+.donationContainer .donateFormContainer textarea::placeholder {
+    font-style: italic;
+    opacity: 0.5;
+}
+
+/*Format donation submit button*/
+.donationContainer .donateFormContainer input[type="submit"] {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: lightskyblue;
+    color: white;
+    transition: 0.5s ease;/*Create hover transition*/
+}
+
+.donationContainer .donateFormContainer input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid lightskyblue;
+    color: lightskyblue;
+}
+
+/*Format privacy policy*/ 
+.privacyPolicyContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 35px;
+}
+
+/*Format privacy policy header*/
+.privacyPolicyContainer h1 {
+    font-family: sans-serif;
+    color: darkslategray;
+    font-size: 60px;
+    margin-bottom: 25px;
+}
+
+.privacyPolicyContainer h2 {
+    font-family: sans-serif;
+    color: darkslategray;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.privacyPolicyContainer h3 {
+    font-family: sans-serif;
+    color: darkslategray;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.privacyPolicyContainer h4 {
+    font-family: sans-serif;
+    color: darkslategray;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/*Format privacy policy text*/
+.privacyPolicyContainer p {
+    font-family: sans-serif;
+    line-height: 1.5;
+    color: darkslategray;
+}
+
+.privacyPolicyContainer li p {
+    font-family: sans-serif;
+    line-height: 1.5;
+    color: darkslategray;
+}
+
+.privacyPolicyContainer ul li {
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    line-height: 1.5;
+    color: darkslategray;
+}
+
+/*End of section formatting*/
+
+/*Footer formatting*/
+footer {
+    padding: 25px;
+}
+
+.footerLogoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Format social media icons*/
+.socialMediaContainer {
+    font-size: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+}
+
+.socialMediaContainer a {
+    color: black;
+    text-decoration: none;
+}
+
+.socialMediaContainer a i {
+    border: 2px solid lightskyblue;
+    border-radius: 50%;
+    padding: 8px;
+    transition: 0.5s ease;/*Create smooth hover transition*/
+}
+
+/*Create icon hover animation*/
+.socialMediaContainer i:hover {
+    cursor: pointer;
+    color: lightblue;
+}
+
+.footerLogoContainer img {
+    width: 200px;
+}
+
+.footerLogoContainer img:hover {
+    cursor: pointer;
+}
+
+footer p {
+    color: lightgray;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+footer p a{
+    color: lightgray;
+}
+
+/*Format quick links*/
+.qckLinkContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    gap: 200px;
+}
+
+.qckLinkContainer .qckLinkItem {
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.qckLinkContainer .qckLinkItem h3 {
+    font-family: sans-serif;
+    color: lightskyblue;
+    font-size: 22px;
+}
+
+.qckLinkContainer .qckLinkItem p {
+    font-family: sans-serif;
+    font-size: 18px;
+    color: black;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+.qckLinkContainer .qckLinkItem a {
+    text-decoration:  none;
+    color: black;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 500;
+    transition: 0.5s ease;/*Create smooth hover transition*/
+}
+
+/*Create item hover*/
+.qckLinkContainer .qckLinkItem a:hover {
+    color: lightskyblue;
+}
+
+.qckLinkContainer .qckLinkItem a, .qckLinkContainer .qckLinkItem p {
+    margin: 10px 0;
+}
+/*End of footer formatting*/
+
+
+/*Media Queries*/
+
+/*Create media query for mobile*/
+@media screen and (max-width: 768px) {
+    /*General media query elements*/
+    /*format footer quick links to be column*/
+    .qckLinkContainer {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .qckLinkContainer .qckLinkItem p {
+        font-size: 16px;
+    }
+
+    /*Format newsletter section*/
+    .newsContainer h2 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .newsContainer p {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    /*Format input fields*/
+    .newsContainer form .inputContainer .formField input[type="text"] {
+        width: 160px;
+        padding: 10px;
+    }
+
+    .fullWidth input {
+        padding: 15px;
+    } 
+
+    /*Format nav background*/
+    nav .navLinks li a {
+        font-size: 25px;
+    }
+    header nav.active .navLinks {
+        transform: translateX(15%);
+        opacity: 1;
+     }
+
+     /*Format donate button*/
+     header nav a {
+        font-size: 20px;
+        padding: 15px;
+     }
+    /*Index page media query*/
+    /*Format header img container*/
+    .aboutContainer {
+        height: 30vh;
+    }
+
+    .aboutContainer h2 {
+        font-size: 28px;
+    }
+
+    .aboutContainer p {
+        font-size: 15px;
+        width: 300px;
+    }
+    /*Format overview conatiner text*/
+    .overContainer .overviewItem p {
+        font-size: 16px;
+        width: 400px;
+        line-height: 2;
+    }
+
+    /*Format img subheader links*/
+    .imgLinkContainer {
+        flex-direction: column;
+    }
+
+    /*Format img link text*/
+    .imgLinkContainer .imgLink {
+        margin-bottom: 25px;
+        flex-direction: column;
+        align-items: normal;
+        justify-content: left;
+        display: flex;
+        
+    }
+
+    .imgLinkContainer .imgLink a {
+        font-size: 22px;
+    }
+
+    /*Format adoption links*/
+    .overContainer .overviewItem .overImgLink img {
+        width: 400px;
+    }
+
+    .overContainer .overviewItem .overImgLink p{
+        font-size: 18px;
+        width: 400px;
+    }
+
+    /*About us media query*/
+    /*Format intro img text*/
+    .introImg h2 {
+        margin: 25px;
+    }
+    /*Format testimonial*/
+    .testimonials h4 {
+        font-size: 35px;
+    }
+
+    .testimonials h5 {
+        font-size: 17px;
+    }
+
+    .testimonials blockquote {
+        font-size: 20px;
+        width: 300px;
+    }
+
+    /*Format quote brackets*/
+    .testimonials blockquote::after {
+       
+        right: -10px;
+        bottom: -40px;
+    }
+
+    /*Format mission statement*/
+    .missionStatement {
+        flex-direction: column-reverse;
+    }
+
+    .missionStatement .missionItemText h2 {
+        font-size: 40px;
+    }
+
+    .missionStatement .missionItemText p {
+        font-size: 20px;
+        width: 400px;
+    }
+
+    /*Format member container*/
+    .membersContainer img {
+        width: 300px;
+    }
+    
+    .membersContainer .memberCardContainer .memberCards img {
+        width: 300px;
+    }
+    
+    /*Donate media query*/
+    /*Format donation header title*/
+    .donationHeader h2 {
+        margin: 25px;
+    }
+    /*Format donation container to be column*/
+    .donationContainer {
+        flex-direction: column;
+    }
+
+    /*Format donation text*/
+    .donationContainer .donateTextItem h2 {
+        font-size: 40px;
+        width: 340px;
+    }
+
+
+    /*Contact us media query*/
+    /*Format contact header*/
+    .contactHeader h2 {
+        margin: 25px;
+    }
+
+    /*Format contact form inputs*/
+    input[type="text"] {
+        width: 200px;
+    }
+
+    .contactInfoContainer .contactForm .contactFormFormat input[type="text"],
+    .contactInfoContainer .contactForm .contactFormFormat input[type="email"],
+    .contactInfoContainer .contactForm .contactFormFormat textarea {
+        width: 300px;
+    }
+
+    /*Programs media query*/
+    .programsHeader h2 {
+        font-size: 40px;
+    }
+
+    .programsHeader p {
+        font-size: 18px;
+    }
+
+    /*Format grid containers*/
+   .cardContainer .cardGrid {
+        grid-template-columns: 1fr;
+   }
+
+   /*Format card images*/
+   .cardContainer .cardGrid .card {
+        width: 300px;
+   }
+   .cardContainer .cardGrid .card img {
+        width: 300px;
+   }
+
+   /*Format card text*/
+   .cardContainer .cardGrid .card h4 {
+    text-align: center;
+   }
+   .cardContainer .cardGrid .card p {
+    text-align: center;
+    font-size: 14px;
+    padding: 5px;
+   }
+
+   /*Format stats img size*/
+   .impactContainer img {
+    width: 450px;
+   }
+
+   /*Privacy policy media query*/
+   /*Format privacy policy text*/
+   .privacyPolicyContainer p{
+        margin: 15px;
+   }
+
+   .privacyPolicyContainer h2 {
+        font-size: 35px;
+        text-align: center;
+   }
+
+   .privacyPolicyContainer h3 {
+        text-align: center;
+   }
+
+   /*Donate media query*/
+   .donationContainer .donateFormContainer form h2 {
+        text-align: center;
+   }
+
+   /*Format form inputs*/
+   .donationContainer .donateFormContainer form input[type="email"] {
+        width: 200px;
+   }
+
+   .donationContainer .donateFormContainer form input[type="text"] {
+        width: 200px;
+    }
+
+    .donationContainer .donateFormContainer form input[type="month"] {
+        width: 200px;
+    }
+
+    .donationContainer .donateFormContainer form input[type="tel"] {
+        width: 200px;
+    }
+
+    /*Format submit button*/
+    .donationContainer .donateFormContainer form input[type="submit"] {
+        padding: 25px;
+        font-size: 25px;
+    }
+}
+
+/*Create media query for desktop*/
+@media screen and (min-width: 1000px) {
+     /*General media query elements*/
+
+     /*Format news letter section*/
+     /*Format news letter text*/
+     .newsContainer p {
+       width: 1000px;
+       font-size: 20px;
+       margin-top: 15px;
+       margin-bottom: 15px;
+     }
+
+     /*Format input fields*/
+     .newsContainer form .inputContainer{
+        width: 215px;
+     }
+
+     /*Format footer*/
+
+     /*Format footer direction*/
+     footer {
+        display: flex;
+        gap: 200px;
+        margin: auto;
+     }
+
+     footer p {
+        margin-top: 500px;
+     }
+
+     /*Format img logo*/
+     .footerLogoContainer img {
+         width: 300px;
+     }
+     
+     /*Format footer quick links*/
+     .qckLinkContainer .qckLinkItem h3 {
+        font-size: 35px;
+     }
+
+     .qckLinkContainer .qckLinkItem a {
+        font-size: 30px;
+     }
+
+     .qckLinkContainer .qckLinkItem p {
+        font-size: 24px;
+     }
+
+     /*Format donate button*/
+     .donateContainer a{
+        font-size: 50px;
+        width: 250px;
+     }
+
+     /*Format hamburger menu*/
+     .hamburgerMenu .bx-menu {
+        font-size: 100px;
+     }
+
+     /*About us media query*/
+     .missionStatement .missionItemText p {
+        font-size: 30px;
+        width: 1500px;
+     }
+
+     /*Format quick links header*/
+     .missionStatement .quickLinks h4 {
+        font-size: 40px;
+     }
+
+     /*Format quick links*/
+     .missionStatement .quickLinks .missionQckLink ul li {
+        padding: 20px;
+     }
+     .missionStatement .quickLinks .missionQckLink ul li a{
+        font-size: 30px;
+     }
+
+     /*Format video section*/
+     .videoContainer iframe {
+        width: 800px;
+        height: 500px;
+     }
+
+     /*Format members container*/
+     .membersContainer .memberCardContainer {
+       display: flex;
+       gap: 50px;
+     }
+
+     /*Contact media query*/
+
+     /*Format contact Text*/
+     .contactInfoContainer .contactItemText p{
+        width: 1500px;
+        font-size: 30px;
+     }
+
+     .contactInfoContainer .contactItemText .contactInformation h4 {
+        font-size: 25px;
+     }
+
+     .contactInfoContainer .contactItemText .contactInformation p {
+        font-size: 20px;
+     }
+
+     .contactInfoContainer .contactItemText .contactInformation a {
+        font-size: 20px;
+     }
+
+     /*Format contact form*/
+     .contactInfoContainer .contactForm .contactFormFormat input[type="text"]{
+        padding: 15px;
+     }
+
+     .contactInfoContainer .contactForm .contactFormFormat input[type="email"]{
+        padding: 15px;
+     }
+
+     /*Programs media query*/
+
+     /*Format programs header section*/
+     .programsHeader p {
+        width: 1700px;
+        font-size: 25px;
+     }
+
+     /*Format programs img*/
+     .programsHeader img {
+        margin: auto;
+        width: 1000px;
+        margin-top: 15px;
+     }
+
+     /*Format program grid items*/
+     .cardContainer .cardGrid .card {
+        width: 700px;
+     }
+
+     /*Format card img*/
+     .cardContainer .cardGrid .card img {
+        width: 700px;
+     }
+
+     .cardContainer .cardGrid .card h4 {
+        font-size: 30px;
+        margin-bottom: 15px;
+     }
+     .cardContainer .cardGrid .card p {
+        padding: 20px;
+        font-size: 20px;
+     }
+
+     /*Privacy policy media query*/
+     /*Format privacy policy text*/
+     .privacyPolicyContainer p {
+        width: 1400px;
+        font-size: 20px;
+     }
+
+     .privacyPolicyContainer ul li {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        width: 1400px;
+        font-size: 20px;
+     }
+
+     /*index media query*/
+     
+
+     /*Format img links*/
+     .imgLinkContainer {
+        margin-bottom: 50px;
+     }
+     .imgLinkContainer .imgLink img {
+        width: 500px;
+     }
+     .imgLinkContainer .imgLink a{
+        font-size: 40px;
+     }
+
+     /*Format adoption container*/
+     .overContainer {
+        display: flex;
+        gap: 50px;
+        align-items: flex-start;
+        position: relative;
+     }
+
+     .overContainer .overviewItem:first-child {
+        position: sticky;
+        max-height: 100vh;
+        overflow: hidden;
+     }
+
+     .overContainer .overviewItem:last-child {
+        width: 40%;
+        overflow-y: visible;
+        max-height: 100vh;
+        overflow-y: scroll;
+        scrollbar-width: none;
+     }
+
+     /*hide scroll bar*/
+     .overContainer .overviewItem:last-child::-webkit-scrollbar {
+        display: none;
+     }
+
+     /*Format overview text*/
+     
+     .overContainer .overviewItem .overImgLink img {
+        width: 800px;
+     }
+
+     .overContainer .overviewItem .overImgLink p {
+        font-size: 18px;
+        width: 700px;
+     }
+     .overContainer .overviewItem p {
+        font-size: 20px;
+     }
+
+     /*Donation media query*/
+     .donationContainer {
+        flex-direction: column;
+     }
+
+     /*Format donation text*/
+     .donationContainer .donateTextItem p{
+        width: 1700px;
+        font-size: 25px;
+     }
+
+     .donationContainer .donateFormContainer {
+        margin: auto;
+        width: 800px;
+     }
+
+     .donationContainer .donateFormContainer form {
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+        justify-content: center;
+     }
+
+     .donationContainer .donateFormContainer form h2 {
+        text-align: center;
+        font-size: 45px;
+     }
+
+     .donationContainer .donateFormContainer form .radioBtns {
+        margin: auto;
+        margin-bottom: 15px;
+     }
+
+     .donationContainer .donateFormContainer form .radioBtns label {
+        font-size: 30px;
+        font-weight: bold;
+     }
+
+     .donationContainer .donateFormContainer form input[type="email"] {
+        width: 500px;
+     }
+
+     .donationContainer .donateFormContainer form input[type="text"] {
+        width: 500px;
+     }
+
+     .donationContainer .donateFormContainer form input[type="number"] {
+        width: 500px;
+     }
+
+     .donationContainer .donateFormContainer form input[type="tel"] {
+        width: 500px;
+     }
+
+     .donationContainer .donateFormContainer form input[type="month"] {
+        width: 500px;
+     }
+
+     .donationContainer .donateFormContainer form select {
+        width: 500px;
+     }
+
+     .donationContainer .donateFormContainer form textarea {
+        width: 500px;
+     }
+
+
+     .donationContainer .donateFormContainer form label {
+        font-size: 25px;
+     }
+     .donationContainer .donateFormContainer form input[type="submit"] {
+        width: 150px;
+        margin: auto;
+        padding: 25px;
+        font-size: 20px;
+     }
+
+}

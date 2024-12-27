@@ -29,18 +29,31 @@
         transform: translateY(0);
     }
 }
+
+@keyframes fillWidth {
+    from {
+        width: 0%;
+    }
+    to {
+        width: var(--target-width);
+    }
+}
 /**End of Keyframe Formatting**/
 
 /**Header Formatting**/
 
 /*Format header tag*/
 header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     /*Create fade down animation*/
     animation: fadeDown 1s ease;
+    background-color: white;
 }
 
 /*Format header h1 tag*/
@@ -59,7 +72,11 @@ header h1 span {
 header i {
     font-size: 6em;
     cursor: none;
+    border: 5px solid lightcoral;
+    border-radius: 8px;
+    color: lightcoral;
 }
+
 /**End of Header Formatting**/
 
 /**Home Section Formatting**/
@@ -104,7 +121,6 @@ header i {
 
 /**Skills Section Formatting**/
 
-
 /*Format skills section*/
 .skillsFormat {
     display: flex;
@@ -112,6 +128,15 @@ header i {
     align-items: center;
     flex-direction: column;
     padding: 40px;
+}
+
+
+/*Format skills grid container*/
+.skillsGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    width: 100%;
 }
 
 /*Format section title*/
@@ -125,6 +150,104 @@ header i {
 /*Format section title span*/
 .skillsFormat h2 span {
     color: lightcoral;
+}
+
+
+/*Format grid skill item*/
+.skillGridItem {
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+    flex-direction: column;
+    padding: 40px;
+}
+
+/*Format skill grid item i tag*/
+.skillGridItem i {
+    font-size: 7em;
+}
+
+/*Format each skill icon*/
+.skillGridItem .bxl-html5 {
+    color: #e34c26;
+}
+
+.skillGridItem .bxl-css3 {
+    color: #264de4;
+}
+
+.skillGridItem .bxl-javascript {
+    color: #f7df1e;
+}
+
+.skillGridItem .bxl-bootstrap {
+    color: #563d7c;
+}
+
+.skillGridItem .bxl-react {
+    color: #61dbfb;
+}
+
+.skillGridItem .bxl-nodejs {
+    color: #68a063;
+}
+
+.skillGridItem .bxl-python {
+    color: #3776ab;
+}
+
+.skillGridItem .bxl-github {
+    color: #211f1f;
+}
+
+.skillGridItem .bxl-jquery {
+    color: #0769ad;
+}
+
+.skillGridItem .bxl-git {
+    color: #f1502f;
+}
+
+.skillGridItem .bxs-data {
+    color: lightblue;
+}
+
+/*Format skill grid item h3 tag*/
+.skillGridItem h3 {
+    font-size: 3em;
+    font-family: monospace;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+
+/*Format progress container*/
+.progress {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 20px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/*Format progress bar fill*/
+.progressFill {
+    background-color: #4caf50;
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s ease-in-out;
+    border-radius: 20px;
+}
+
+/*Format skill percentage span*/
+.skillGridItem span {
+    font-size: 3em;
+    font-family: monospace;
+    font-weight: bolder;
+    color: lightcoral;
+    letter-spacing: 2px;
+    margin-top: 20px;
 }
 
 /**Contact Information Formatting**/

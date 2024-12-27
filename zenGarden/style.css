@@ -1,0 +1,366 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+
+/* General Formatting */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	}
+/*End of general formatting*/
+
+/*Keyframe Formatting*/
+@keyframes appear{
+	0%{
+		opacity: 0;/*Have links invisible*/
+	}
+	100%{
+		opacity: 1;/*Have links appear*/
+	}
+}
+
+@keyframes revealText{
+	0%{
+		opacity: 0;/*Hide text*/
+		transform: translateX(-100px);/*Start text off screen*/
+	}
+	100%{
+		opacity: 1;/*Make text visible*/
+		transform: translateX(0);/*Set text back to original position*/
+	}
+}
+
+/*Format body*/
+body{
+	background-image: url(../zenGarden/images/bambooTrees.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 200vh;
+	height: 100%;
+}
+
+/*Start of hamburger menu formatting*/
+.designToggleMenu{
+	display: none;/*Hide the hamburger menu*/
+}
+
+.conceptMenu{
+	cursor: pointer;
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	z-index: 1000; /*Have menu appear above rest of content*/
+	
+}
+
+ /*Format menu and links*/
+.designMenu{
+	position: fixed;
+	right: -250px; /*Hidden at start*/
+	top: 0;
+	width: 250px;
+	height: 100%; /*Have menu take up all height*/
+	background-color: black;
+	transition: right 0.7s ease-in; /*Create slow transition for menu opening*/
+	background-image:
+		 linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)), /*Create a dark grey background on top of image*/
+		 url(../zenGarden/images/darkBamboo.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	opacity: 0.9;
+	z-index: 2;
+}
+
+/*Format header*/
+.designMenu h3{
+	font-size: 18px;
+	padding: 5px;
+	text-decoration: none;
+	font-family: monospace;
+	letter-spacing: normal;
+	color: white;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+.designMenu{
+	border-left: 3px solid black;
+}
+
+.designMenu ul{
+	list-style-type: none; /*Get rid of bullets*/
+	padding: 5px;
+	margin-top: 15px;
+}
+
+.designMenu ul li{
+	margin-left: 25px;
+	margin-bottom: 30px;
+	font-size: 13px;
+}
+.designMenu ul li span{
+	color: white;
+}
+
+.designMenu ul li a{
+	text-decoration: none;
+	color: white;
+	font-family: monospace;
+	transition: 0.5s ease-in;/*Create transition effect for links*/
+}
+
+.designMenu ul li a:hover{
+	font-weight: bold;
+	font-size: large;
+	cursor: pointer;
+	color: cyan;
+}
+
+
+/*Show menu when icon is clicked*/
+.designToggleMenu:checked + .conceptMenu + .designMenu{
+	right: 0;/*Show template menu*/
+}
+
+/*Change icon when menu is open*/
+.designToggleMenu:checked + .conceptMenu i {
+	display: none; /*Hide hamburger icon when menu is open*/
+}
+
+/*Format menu to be an X when menu is open*/
+.designToggleMenu:checked + .conceptMenu::after{
+	content: "\f00d"; /*times icon from fontawesome*/
+	font-family: "Font Awesome 5 Free";
+	font-weight: bolder;
+	font-size: 30px;
+	color: white;
+}
+
+/*Format menu icon*/
+.fa-bars{
+	color: white;
+	font-size: 30px;
+	transition: 0.5s ease;/*Create transition effect for hover*/
+}
+
+.fa-bars:hover{
+	color: red;
+	font-size: 40px;/*Make icon larger when hovered*/
+}
+/*End of hamburger menu formatting*/
+
+
+/*Format headers for each section*/
+.sectionFormat h3{
+	font-family: 'Noto San JP', sans-serif;
+	font-size: 30px;
+	letter-spacing: 2px;
+	margin-bottom: 5px;
+	color: white;
+	text-decoration: underline;
+	font-style: italic;
+	animation: appear 0.5s ease-in;/*Create appear animation for headers*/
+}
+.sectionFormat{
+	padding: 15px;
+	margin-top: 200px;
+}
+
+/*Format section links*/
+.sectionFormat a{
+	text-decoration: none;
+	font-family: 'Noto San JP', sans-serif;
+	color: #FFC0CB;
+	transition: 0.5s ease;/*Create transition effect for hover*/
+	font-weight: bolder;
+}
+
+.sectionFormat a:hover{
+	font-size: larger;
+	color: cyan;
+}
+
+.sectionFormat p{
+	line-height: 2;
+	font-family: monospace;
+	color: bisque;
+	font-size: 20px;
+	margin-left: 5px;
+	text-wrap: normal;
+	animation: revealText  0.5s forwards;/*Create fade left to right matrix animation*/
+}
+
+.gridContainer{
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	justify-content: center;
+	align-items: start;
+	background-image: 
+	linear-gradient(rgba(255, 0, 0, 0.3), rgba(255, 0, 0, 0.3)), /*Create a dark grey background on top of image*/
+		url(../zenGarden/images/temple.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	overflow: hidden;
+	z-index: 1;
+}
+
+
+/*Create blur effect for top and bottom of gridContainer*/
+.gridContainer::before, .gridContainer::after{
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	height: 100px;
+	z-index: 2;
+	background: inherit;
+	filter: blur(5px);
+}
+
+.gridContainer::before{
+	top: 0; /*Put blur at top*/
+}
+
+.gridContainer::after{
+	bottom: 0;/*Put blur at bottom*/
+}
+
+/*Format imgBackground*/
+.sectionBackground{
+	background-image: 
+	linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),
+	url(../zenGarden/images/cherryBlossoms.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	color: lightgreen;
+	font-family: monospace;
+	font-weight: bolder;
+}
+/*End of section Formatting*/
+
+/*Format title*/
+.titleFormat header{
+	text-align: center;
+	padding: 10px;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.titleFormat header h1{
+	margin-bottom: 10px;
+}
+
+.titleFormat header h1, .titleFormat header h2{
+	font-size: 50px;
+	font-family: monospace;
+}
+
+.titleFormat a{
+	text-decoration: none;
+	color: #FFC0CB;
+	transition: 0.5s ease;/*Create transition effect for hover*/
+	font-family: 'Noto San JP', sans-serif;
+	font-size: medium;
+}
+
+.titleFormat a:hover{
+	color: cyan;
+	font-weight: bolder;
+	font-size: larger;
+}
+
+.titleFormat header div{
+	margin-top: 25px;
+	line-height: 1.5;
+}
+
+/*Format title text*/
+.textFormat{
+	font-size: larger;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+/*Have the title be in the center with transform property*/
+.titleFormat header h1, .titleFormat header h2, .titleFormat header div{
+	transform: translateY(200px);
+	color: white;
+}
+/*End of title Formatting*/
+
+/*Format background image*/
+
+/*Format footer*/
+footer{
+	text-align: center;
+	padding: 25px;
+	background-color: #B73D3D;
+}
+
+/*Format footer links*/
+footer a{
+	text-decoration: none;
+	font-family: 'Noto San JP', sans-serif;
+	margin-right: 20px;
+	color: #FFC0CB;
+	font-size: 15px;
+	transition: 0.5s ease;/*Create transition effect for hover*/
+	animation: appear 0.5s ease-in;/*Create appear from left animation*/
+}
+
+/*Format hover links*/
+footer a:hover{
+	font-weight: bold;
+	font-size: larger;
+}
+/*End of footer Formatting*/
+
+
+/*Create media query*/
+@media screen and (max-width: 768px) {
+	/*Display grid container items as a column*/
+	.gridContainer{
+		display: flex;
+		flex-direction: column;
+		padding: 50px;
+	}
+
+	/*Make font smaller */
+	.gridContainer .sectionFormat p{
+		font-size: 14px;
+		font-weight: bolder;
+	}
+
+	.gridContainer .sectionFormat{
+		margin: auto 0;
+	}
+
+	/*Format section font size*/
+	.sectionFormat p{
+		font-size: 15px;
+		padding: 15px;
+		font-weight: bolder;
+	}
+
+	/*Get rid of blur filter*/
+	.gridContainer::before,
+	.gridContainer::after{
+		filter: none;/*Get rid of blur filter*/
+		display: none;/*Hide blur elements in mobile mode*/
+	}
+
+}
+
+
+

@@ -1,0 +1,609 @@
+/*General Formatting*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*End of general Formatting*/
+
+/*Font formatting*/
+@font-face {
+    font-family: 'SourceSans3-Regular';
+    src: url(../fonts/SourceSans3-Regular.ttf);
+}
+/*End of font formatting*/
+
+/*Keyframe formatting*/
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes appearFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/*End of keyframe formatting*/
+
+/*Header Formatting*/
+header {
+    background-color: #5371fe;
+}
+/*Format company logo*/
+header img {
+    width: 150px;
+    animation: appearFromLeft 1s ease;
+}
+
+/*Format nav links*/
+header nav .nav-link {
+    color: white;
+    transition: 0.5s ease;/*Smooth hover transition*/
+    font-family: 'SourceSans3-Regular', sans-serif;
+    font-size: 20px;
+}
+
+header nav .nav-link:hover {
+   color: lightcoral;
+}
+/*End of header formatting*/
+
+/*Section Formatting*/
+/*Format main tag*/
+main {
+    background-image: url(../images/sun-tornado.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.introStatement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/*Format section img*/
+.introStatement img {
+    width: 300px;
+    animation: fadeDown 1s ease;/*Apply fadeDown animation*/
+}
+
+/*Format intro title*/
+.introStatement h2 {
+    font-family: 'SourceSans3-Regular', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    color: #005F5F;
+}
+
+/*Format title span*/
+.introStatement h2 span {
+    color: #5371fe;
+}
+
+/*Format section text*/
+.introStatement p {
+    text-align: center;
+    line-height: 2;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    width: 80%;
+   color: #005F5F;
+}
+
+
+/*Format section button*/
+.introStatement .btn-primary {
+    background-color: #5371fe;
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    border-radius: 100px;
+    padding: 10px;
+    font-weight: bolder;
+    transition: 0.5s ease;/*Smooth hover transition*/
+}
+
+.introStatement .btn-primary:hover {
+    background-color: transparent;
+    border: 1px solid #5371fe;
+    color: #5371fe;
+}
+
+/*Create img gallery section*/
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    
+}
+
+/*Format img gallery title*/
+.imgContainer h2 {
+    /*Make position of title lower*/
+    font-family: 'SourceSans3-Regular', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    color: #5371fe;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+/*Format img gallery imgs*/
+.imgContainer .imgGallery .imgItem img {
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.imgContainer .imgGallery .imgItem h2 {
+    color: #005F5F;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+/*Create hover section*/
+.hoverSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/*Format hover item*/
+.hoverSection  .hoverItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    border-radius: 8px;
+    width: 300px;
+    height: 200px;
+}
+
+
+/*Format contact container*/
+.contactContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/*Format contact title*/
+.contactContainer h2 {
+    color: #005F5F;
+    font-family: 'SourceSans3-Regular', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+/*Format form*/
+.contactContainer form {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/*Format form labels*/
+.contactContainer form label {
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    color: #005F5F;
+}
+/*Format input element*/
+.contactContainer form input[type="text"],
+.contactContainer form input[type="email"],
+.contactContainer form input[type="tel"] {
+    margin-top: 8px;
+    margin-bottom: 5px;
+    display: inline-block;
+    width: 250px;
+    border-radius: 8px;
+    border: none;
+    padding: 8px;
+}
+
+/*Format textarea*/
+.contactContainer form textarea {
+    margin-top: 8px;
+    border-radius: 8px;
+    padding: 8px;
+    border: none;
+    display: inline-block;
+    width: 250px;
+}
+/*Format form input submit button*/
+.contactContainer form input[type="submit"] {
+   margin-top: 20px;
+   display: inline-block;
+   width: 100px;
+   padding: 12px;
+   text-align: center;
+   border-radius: 100px;
+   border: none;
+   background-color: #5371fe;
+   color: white;
+   font-weight: bolder;
+   transition: 0.5s ease;/*Smooth hover transition*/
+}
+
+.contactContainer form input[type="submit"]:hover {
+    background-color: transparent;
+    border: 1px solid #5371fe;
+    color: #5371fe;
+}
+
+/*Form input placeholders*/
+.contactContainer form input::placeholder, .contactContainer form textarea::placeholder {
+    padding-left: 10px;
+    font-style: italic;
+    opacity: 0.8;
+    font-size: 13px;
+}
+
+/*Error messages formatting*/
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-left: 5px;
+}
+
+.success {
+    color: green;
+    font-size: 1em;
+    margin-top: 10px;
+}
+/*Format section title*/
+.hoverSection h2 {
+    font-family: 'SourceSans3-Regular', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    color: #005F5F;
+}
+
+/*Format section button*/
+.hoverSection button {
+    border: none;
+    padding: 12px;
+    font-weight: bolder;
+    color: white;
+    background-color: #5371fe;
+    border-radius: 100px;
+    display: inline-block;
+    width: 120px;
+}
+
+/*Create tracker list container*/
+.trackerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+}
+
+/*Format tracker title*/
+.trackerContainer h2 {
+    color: #005F5F;
+    font-family: 'SourceSans3-Regular', sans-serif;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+/*Format input container*/
+.trackerContainer .inputContainer {
+    background-color: rosybrown;
+    padding: 50px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*Format tracker list title*/
+.trackerContainer .inputContainer h3 {
+    color: #5371fe;
+    margin-bottom: 15px;
+}
+
+
+/*Format tracker input field*/
+.trackerContainer .inputContainer input[type="text"] {
+    padding: 5px;
+    display: inline-block;
+    width: 200px;
+    border-radius: 8px;
+    border: none;
+    margin-right: 10px;
+    font-size: 12px;
+    transition: 0.5s ease;/*Smooth hover transition*/
+    margin-bottom: 25px;
+}
+
+/*Create scale input hover*/
+.trackerContainer .inputContainer input[type="text"]:hover {
+    transform: scale(1.1);
+    border: 2px solid #5371fe;
+    outline: none;
+}
+
+/*Format input placeholder*/
+.trackerContainer .inputContainer input::placeholder {
+    font-style: italic;
+    opacity: 0.8;
+}
+
+/*Format button*/
+.trackerContainer .inputContainer button {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    border: none;
+    padding: 12px;
+    border-radius: 100px;
+    background-color: #5371fe;
+    color: white;
+    font-weight: bolder;
+    transition: 0.5s ease;/*Smooth hover transition*/
+}
+
+
+/*Format list items*/
+.trackerContainer .inputContainer .task-item {
+    list-style-type: upper-roman;
+    font-family: monospace;
+    font-size: 18px;
+}
+/*Format delete task button*/
+.trackerContainer .inputContainer .deleteTask {
+    margin-top: 25px;
+    border-radius: 50%;
+    padding: 10px;
+    width: 40px;
+    margin-left: 10px;
+}
+
+.trackerContainer .inputContainer button:hover {
+    background-color: transparent;
+    border: 1px solid #5371fe;
+    color: #5371fe;
+}
+
+/*Footer Formatting*/
+footer {
+   background-color: #5371fe;
+   padding: 20px;
+   color: white;
+   font-size: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+/*Format footer img*/
+footer img {
+    width: 450px;
+}
+/*End of footer formatting*/
+
+
+/*Create desktop media query*/
+@media screen and (min-width: 1024px) {
+    /*Format header logo*/
+    header img {
+        width: 300px;
+    }
+
+    /*Format nav links*/
+    header nav .nav-link {
+        font-size: 35px;
+    }
+
+    /*Format intro section*/
+    .introStatement img {
+        width: 500px;
+    }
+
+    /*Format title*/
+    .introStatement h2 {
+        font: 100px;
+    }
+
+    /*Format intro text*/
+    .introStatement p {
+        font-size: 25px;
+        width: 1000px;
+    }
+
+    /*Format intro button*/
+    .introStatement .btn-primary {
+        font-size: 25px;
+        padding: 20px;
+        display:    inline-block;
+        width: 200px;
+    }
+
+    /*Format about section*/
+    .imgContainer .imgGallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+        padding: 20px;
+    }
+
+    /*Format section title*/
+    .imgContainer h2 {
+        font-size: 50px;
+    }
+
+    /*Format img gallery imgs*/
+    .imgContainer .imgGallery .imgItem img {
+        width: 500px;
+    }
+
+    /*Format img titles*/
+    .imgContainer .imgGallery .imgItem h2{
+        font-size: 35px;
+    }
+
+
+    /*Format contact section*/
+
+    /*Format contact title*/
+    .contactContainer h2 {
+        font-size: 50px;
+    }
+
+    .contactContainer .formFormat {
+        width: 500px;
+    }
+
+    /*Format form labels*/
+    .contactContainer .formFormat label {
+        font-size: 25px;
+    }
+
+    /*Format form inputs*/
+    .contactContainer .formFormat input[type="text"],
+    .contactContainer .formFormat input[type="email"],
+    .contactContainer .formFormat input[type="tel"],
+    .contactContainer .formFormat textarea {
+        display: inline-block;
+        width: 450px;
+    }
+
+    /*Format textarea height*/
+    .contactContainer .formFormat textarea {
+        height: 200px;
+    }
+    /*Format footer img*/
+    footer img {
+        width: 300px;
+    }
+
+    /*Format footer text*/
+    footer {
+        font-size: 25px;
+    }
+}
+
+/*Create media query for tablet length*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /*Format header logo*/
+    header img {
+        width: 300px;
+    }
+
+    /*Format nav links*/
+    header nav .nav-link {
+        font-size: 35px;
+    }
+
+    /*Format intro img*/
+    .introStatement img {
+        width: 500px;
+    }
+
+    /*Format intro text*/
+    .introStatement h2 {
+        font-size: 50px;
+
+    }
+
+    /*Format intro text*/
+    .introStatement p {
+        font-size: 25px;
+        width: 800px;
+    }
+
+    /*Format intro button*/
+    .introStatement .btn-primary {
+        font-size: 25px;
+        padding: 20px;
+        display: inline-block;
+        width: 200px;
+    }
+
+    /*Format img gallery item imgs*/
+    .imgContainer .imgGallery .imgItem {
+        width: 300px;
+    }
+
+    /*Format img gallery item imgs*/
+    .imgContainer .imgGallery .imgItem img {
+        width: 300px;
+    }
+
+    /**Format img gallery item titles*/
+    .imgContainer .imgGallery .imgItem h2 {
+        font-size: 30px;
+    }
+
+    /*Format contact section*/
+    .contactContainer h2{
+        font-size: 50px;
+    }
+
+    /*Format form*/
+    .contactContainer .formFormat {
+        width: 400px;
+    }
+
+    /*Format form labels*/
+    .contactContainer .formFormat label {
+        font-size: 25px;
+    }
+
+    /*Format form inputs*/
+    .contactContainer .formFormat input[type="text"],
+    .contactContainer .formFormat input[type="email"],
+    .contactContainer .formFormat input[type="tel"],
+    .contactContainer .formFormat textarea {
+        display: inline-block;
+        width: 350px;
+    }
+
+    /*Format footer text*/
+    footer {
+        font-size: 25px;
+    }
+
+    /*Format footer img*/ 
+    footer img {
+        width: 300px;
+    }
+}

@@ -77,6 +77,56 @@ header i {
     background-attachment: fixed;
     height: 40vh;
 }
+
+/*Format home section h2 tag*/
+.homeFormat h2 {
+    font-size: 7em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: white;
+    text-transform: uppercase;
+}
+
+/*Format home section h2 span tag*/
+.homeFormat h2 span {
+    color: lightcoral;
+    font-family: monospace;
+}
+
+/*Format home section button link*/
+.homeFormat .btn-primary {
+    font-size: 40px;
+    display: inline-block;
+    width: 400px;
+    padding: 30px 20px;
+}
+/**End of Home Section Formatting**/
+
+/**Skills Section Formatting**/
+
+
+/*Format skills section*/
+.skillsFormat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+/*Format section title*/
+.skillsFormat h2 {
+    font-size: 6em;
+    font-family: sans-serif;
+    font-weight: bolder;
+    margin-bottom: 50px;
+}   
+
+/*Format section title span*/
+.skillsFormat h2 span {
+    color: lightcoral;
+}
+
 /**Contact Information Formatting**/
 .contactFormat {
     display: flex;
@@ -230,7 +280,6 @@ header i {
     color: lightcoral;
     border: 5px solid lightcoral;
 }
-
 /**End of Contact Information Formatting**/
 
 /**Footer Formatting**/

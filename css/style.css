@@ -528,3 +528,73 @@ footer a:hover {
     color: red;
 }
 /**End of Footer Formatting**/
+
+
+/**Privacy Formatting**/
+.privacy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f8fbfc;
+}
+
+/*Format privacy headers*/
+.privacy h1 {
+    font-size: 6em;
+    font-family: sans-serif;
+    font-weight: bolder;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.privacy h2 {
+    font-size: 5em;
+    font-family: sans-serif;
+    font-weight: bolder;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.privacy h3 {
+    font-size: 3em;
+    font-family: sans-serif;
+    font-weight: bolder;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.privacy h4 {
+    font-size: 2em;
+    font-family: sans-serif;
+    font-weight: bolder;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.privacy h1, .privacy h2,  .privacy h3, .privacy h4 {
+    color: lightcoral;
+}
+
+/*Format privacy p tag*/
+.privacy p {
+    font-size: 2em;
+    font-family: sans-serif;
+    margin-bottom: 50px;
+    text-align: left;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+/*Format privacy ul tag*/
+.privacy ul {
+    font-family: sans-serif;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+/*Format privacy li tag*/
+.privacy ul li {
+    font-size: 20px;
+}
+/**End of Privacy Formatting**/

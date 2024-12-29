@@ -1,0 +1,743 @@
+/*General Formatting*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*End of general formatting*/
+
+/*Keyframes formatting*/
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*End of keyframe formatting*/
+
+/*Header formatting*/
+header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*Format nav header*/
+header nav {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+/*Format nav links*/
+header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+header nav ul li {
+  margin-right: 25px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 20px;
+  transition: 0.5s ease;/*Smooth hover transition*/
+}
+
+header nav ul li a:hover {
+  text-decoration: none;
+  font-size: 25px;
+  color: orange;
+  font-weight: bolder;
+}
+
+/*Format header img*/
+header img {
+  width: 150px;
+  height: auto;
+}
+/*End of footer formatting*/
+
+/*Section formatting*/
+
+/**index.html**/
+.introSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+    url(../images/jewleryIntro.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 20vh;
+}
+
+/*Format intro header h2 tag*/
+.introSection h2 {
+  color: white;
+  font-size: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*Format intro section text*/
+.introSection p {
+  font-style: italic;
+  color: aquamarine;
+  animation: appear 1s ease/*Create appear animation*/
+}
+
+/*Format index about container*/
+.aboutContainer {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+  background-image: url(../images/aboutStatic.png);
+  background-position: center;
+  background-size: cover;
+  height: 50vh;
+  padding: 25px;
+  overflow: hidden;
+}
+
+/*Format about section text*/
+.aboutContainer p {
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 18px;
+  color: white;
+  
+}
+
+/*Format img*/
+.aboutContainer img {
+  width: 300px;
+  border-radius: 8px;
+  /*Create box shadow effect*/
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+/*Format span tag element in about container*/
+.aboutContainer span {
+  color: Orange;
+}
+
+
+/*Format index contact container*/
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-image: url(../images/contactSection.png);
+  background-position: center;
+  background-size: cover;
+  height: 25vh;
+}
+
+/*Format contact section text*/
+.contactContainer h2 {
+  font-family: sans-serif;
+  font-weight: bolder;
+  color: black;
+  font-size: 30px;
+}
+
+/*Format link*/
+.contactContainer a {
+  display: inline-block;
+  width: 150px;
+  font-size: 20px;
+  background-color: orange;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  color: white;
+  transition: 0.5s ease;/*Smooth hover transition*/
+}
+
+.contactContainer a:hover {
+  background-color: black;
+  font-weight: bolder;
+  color: white;
+  text-decoration: none;
+  border: 3px solid white;
+}
+
+/**Contact Page Formatting**/
+.formContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(../images/aboutStatic.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+/*Format form title*/
+.formContainer h2 {
+  color: orange;
+  font-family: sans-serif;
+}
+
+/*Format contact form*/
+.formContainer .contactForm {
+  padding: 20px;
+  margin-top: 25px;
+  background-color: #EC0868;
+  width: 400px;
+  height: 750px;
+  border-radius: 8px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  animation: fadeDown 1s ease;/*Create fade down animation*/
+}
+
+
+/*Format form labels*/
+.formContainer .contactForm label {
+  font-weight: bolder;
+  font-family: monospace;
+  font-size: 18px;
+}
+/*Format form inputs*/
+.formContainer .contactForm input[type="text"],
+.formContainer .contactForm input[type="email"],
+.formContainer .contactForm input[type="tel"] {
+  display: inline-block;
+  width: 350px;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 15px;
+  transition: 0.5s ease;;
+}
+
+.formContainer .contactForm input[type="text"]:hover,
+.formContainer .contactForm input[type="email"]:hover,
+.formContainer .contactForm input[type="tel"]:hover {
+  transform: scale(1.1);
+}
+
+/*Format form placeholders*/
+.formContainer .contactForm input::placeholder {
+  font-style: italic;
+  color: lightgrey;
+}
+
+/*Format textarea*/
+.formContainer .contactForm textarea {
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 15px;
+}
+
+/*Format submit button*/
+.formContainer .contactForm input[type="submit"] {
+  border: none;
+  display: inline-block;
+  width: 130px;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bolder;
+  background-color: orchid;
+  transition: 0.5s ease;/*Smooth hover transition*/
+}
+
+.formContainer .contactForm input[type="submit"]:hover {
+  border: 2px solid black;
+  background: transparent;
+  color: white;
+}
+
+/**About Page Formatting**/
+
+/*Format about container header*/
+.aboutUsHeader {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-image:
+    linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)), 
+    url(../images/aboutUsHeader.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 20vh;
+}
+
+/*Format about header text*/
+.aboutUsHeader h2 {
+  color: white;
+  font-family: sans-serif;
+  font-weight: bolder;
+  margin-left: 20px;
+}
+
+/*Format story container*/
+.storyContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.storyContainer h2 {
+  color: orange;
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: sans-serif;
+}
+
+/*Format story items*/
+.storyContainer .storyItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*Format about story item*/
+.storyContainer .storyItem img{
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+/*Format about story text*/
+.storyContainer .storyItem p {
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: monospace;
+  font-weight: bolder;
+  color: #7700FF;
+}
+/*Create choose us container*/
+.chooseUsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: cadetblue;
+}
+
+.chooseUsContainer h2 {
+  color: orange;
+}
+
+/*Format choose us list*/
+.chooseUsContainer .listContainer ul {
+  list-style-type: none;
+  padding: 20px;
+}
+
+.chooseUsContainer .listContainer ul li {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-style: italic;
+  font-weight: bolder;
+  font-family: monospace;
+  color: #7700FF;
+}
+/*Format services container*/
+.servicesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: rgba(255, 165, 0, 0.5);
+}
+
+/*Format services header*/
+.servicesContainer h2 {
+  color: #7700FF;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+/*Format services imgs*/
+.servicesContainer .serviceTypeContainer .serviceItem {
+  margin-bottom: 20px;
+}
+.servicesContainer .serviceTypeContainer .serviceItem img {
+  width: 300px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  transition: 0.5s ease;/*Create scale hover effect*/
+}
+
+.servicesContainer .serviceTypeContainer .serviceItem img:hover {
+  transform: scale(1.1);
+  border: 2px solid #7700FF;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+/*Format service headers*/
+.servicesContainer .serviceTypeContainer .serviceItem h3 {
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  color: #EC0868;
+}
+
+/**Index Page Formatting**/
+
+/*Format online loan container*/
+.LoanPaymentContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  background-image: url(../images/loanPayment.png);
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+}
+
+/*Format title*/
+.LoanPaymentContainer h2 {
+  font-family: sans-serif;
+  font-size: 35px;
+  font-weight: bolder;
+  margin-bottom: 25px;
+  color: white;
+}
+/*Format span element*/
+.LoanPaymentContainer  h2 span {
+  color: orange;
+}
+
+
+/*Format items*/
+.LoanPaymentContainer .itemContainer .loanItem {
+  text-align: center;
+  transition: 0.5s ease;/*Create hover effect*/
+}
+
+
+.LoanPaymentContainer .itemContainer .loanItem:hover {
+  transform: scale(1.1);
+}
+
+.LoanPaymentContainer .itemContainer .loanItem i {
+  font-size: 40px;
+}
+.LoanPaymentContainer .itemContainer .loanItem h4 {
+  color: orange;
+  font-family: sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.LoanPaymentContainer .itemContainer .loanItem p {
+  color: white;
+  font-family: monospace;
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+
+/*End of section Formatting*/
+
+/*Footer Formatting*/
+footer {
+  font-family: monospace;
+  font-size: 12px;
+  text-align: center;
+  border-top: 5px solid black;
+}
+
+/*Format social media container*/
+footer .socialMediaContainer img {
+  width: 130px;
+}
+
+/*Format social icons container*/
+footer .socialMediaContainer .socialIconsContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+/*Format social icons*/
+footer .socialMediaContainer .socialIconsContainer i {
+  font-size: 40px;
+  transition: 0.5s ease;/*Smooth hover transition*/
+}
+
+/*Format each icon*/
+.bi-facebook {
+  color: blue;
+}
+
+.bi-youtube {
+  color: red;
+}
+
+.bi-twitter {
+  color: lightblue;
+}
+
+.bi-linkedin {
+  color: darkblue;
+}
+
+.bi-github {
+  color: black;
+}
+
+/*Create icon hover for social media icons*/
+
+.bi-facebook:hover {
+  color: darkblue;
+  transform: scale(1.2);
+}
+
+.bi-youtube:hover {
+  color: darkred;
+}
+
+.bi-twitter:hover {
+  color: darkcyan;
+}
+
+.bi-linkedin:hover {
+  color: lightblue;
+}
+
+.bi-github:hover {
+  color: darkgray;
+}
+
+/*Format quick links container*/
+footer .quickLinksContainer {
+  text-align: center;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*Format quick link header*/
+footer .quickLinksContainer h4 {
+  text-align: left;
+  margin-bottom: 15px;
+  text-decoration: underline;
+}
+
+/*Format quick link list*/
+footer .quickLinksContainer ul {
+  list-style-type: none;
+}
+
+/*Format quick link list items*/
+footer .quickLinksContainer ul li {
+  font-size: 14px;
+  font-family: sans-serif;
+  margin-bottom: 15px;
+}
+
+/*Format quicklinks link*/
+footer .quickLinksContainer ul li a {
+  color: black;
+  transition: 0.5s ease;
+}
+
+footer .quickLinksContainer ul li a:hover {
+  color: turquoise;
+  text-decoration: none;
+}
+
+
+
+/*Privacy link formatting*/
+.privacyContainer {
+  background-color: lightgray;
+  padding: 10px;
+}
+
+/*Format privacy container text*/
+.privacyContainer p {
+  color:black;
+}
+
+/*Format privacy container link*/
+.privacyContainer a {
+  color: black;
+  text-decoration: none;
+  cursor: none;
+  transition: 0.5s ease;
+}
+
+.privacyContainer a:hover {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+/*End of footer formatting*/
+
+
+/*Media query formatting*/
+
+/*Desktop media query*/
+@media screen and (min-width: 1100px) {
+  
+  /*Format header img*/
+  header img {
+    width: 270px;
+  }
+
+  /*Format header nav*/
+  header nav ul li a{
+    font-size: 35px;
+  }
+  
+  header nav ul li a:hover {
+    font-size: 40px;
+  }
+
+  /*Format about page*/
+  .aboutUsHeader {
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .aboutUsHeader h2 {
+    font-size: 100px;
+  }
+
+  /*Format our story section*/
+  .storyContainer h2 {
+    font-size: 50px;
+  }
+
+  .storyContainer .storyItem {
+    flex-direction: row;
+    padding: 20px;
+  }
+
+  .storyContainer .storyItem img {
+    width: 500px;
+    margin-right: 25px;
+  }
+
+  .storyContainer .storyItem p {
+    margin-top: 25px;
+    line-height: 2;
+    width: 800px;
+    font-size: 25px;
+  }
+
+  /*Format services section*/
+  .servicesContainer h2 {
+    font-size: 50px;
+  }
+
+  /*Format services into two column grids*/
+  .servicesContainer .serviceTypeContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 25px;
+    gap: 20px;
+  }
+
+  .servicesContainer .serviceTypeContainer .serviceItem  img {
+    width: 500px;
+  }
+
+  .servicesContainer .serviceTypeContainer .serviceItem h3 {
+    font-size: 35px;
+  }
+
+  /*Format why choose us section*/
+  .chooseUsContainer h2 {
+    font-size: 50px;
+  }
+
+  .chooseUsContainer .listContainer ul li{
+    font-size: 20px;
+  }
+
+  /*Format contact section title*/
+  .contactContainer h2 {
+    font-size: 50px;
+  }
+
+  /*index formatting*/
+  .introSection {
+    height: 35vh;
+  }
+
+  .introSection h2 {
+    font-size: 100px;
+  }
+
+  .introSection p {
+    font-size: 40px;
+  }
+
+  /*Format loan section*/
+  .LoanPaymentContainer {
+    height: 100vh;
+  } 
+
+  .LoanPaymentContainer h2 {
+    font-size: 50px;
+  }
+
+  /*Format loan icon*/
+  .LoanPaymentContainer .itemContainer .loanItem i {
+    font-size: 80px;
+  }
+
+  /*Format loan header*/
+  .LoanPaymentContainer .itemContainer .loanItem h4 {
+    font-size: 35px;
+  }
+
+  /*Format loan paragraph*/
+  .LoanPaymentContainer .itemContainer .loanItem p {
+    font-size: 25px;
+    width: 700px;
+  }
+}
+
+/*End of media query formatting*/

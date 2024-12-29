@@ -1,0 +1,61 @@
+doctype html
+html(lang="en-us")
+  head
+    meta(charset='utf-8')
+    title #{title} 
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css')
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+    script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js')
+    script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
+    
+  body
+    header
+     img(src="images/browardPawnLogo.png", alt="Broward Pawn")
+     nav 
+      ul 
+        li 
+          a(href="/") Index
+        li 
+          a(href="/about") About Us
+        li 
+          a(href="/contact") Contact Us
+
+    
+      
+    block content            
+    footer
+      div.socialMediaContainer
+        img(src="images/browardPawnLogo.png", alt="Broward Pawn")
+        div.socialIconsContainer
+          a(href="https://www.facebook.com/" target="_blank") 
+            i.bi.bi-facebook
+          a(href="https://www.youtube.com/" target="_blank") 
+            i.bi.bi-youtube
+          a(href="https://x.com/" target="_blank")   
+            i.bi.bi-twitter
+          a(href="https://www.linkedin.com/" target="_blank") 
+            i.bi.bi-linkedin
+          a(href="https://github.com/Daniel1000c/website-Portfolio" target="_blank") 
+            i.bi.bi-github
+        div.quickLinksContainer
+          h4 Contact Information 
+          ul 
+            li 12172 SW 52nd CT, Cooper City, FL, 33330
+            li Phone #: 305-527-0765
+            li 
+              a(href="mailto:browardPawn312@gmail.com") browardPawn312@gmail.com 
+            li 
+          h4 Quick Links
+          nav 
+            ul 
+              li 
+                a(href="/") Home 
+              li 
+                a(href="/about") About Broward Pawn
+              li 
+                a(href="/contact") Get in Touch with Us 
+
+      div.privacyContainer 
+        p &copy; 2024 Broward Pawn, Inc. | All Rights Reserved 

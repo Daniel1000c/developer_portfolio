@@ -199,8 +199,9 @@ header i {
 }
 /*Format grid service item h3 tag*/
 .serviceGridItem h3 {
-    font-size: 5em;
-    font-family: sans-serif;
+    font-size: 4em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
     font-weight: bolder;
     margin-bottom: 50px;
     color: white;
@@ -208,8 +209,9 @@ header i {
 
 /*Format grid service item p tag*/
 .serviceGridItem p {
-    font-size: 2em;
-    font-family: 'Roboto-Regular';
+    font-size: 2.1em;
+    font-family: monospace;
+    font-weight: bolder;
     letter-spacing: 2px;
     line-height: 2;
     color: white;

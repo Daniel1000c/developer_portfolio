@@ -7,6 +7,8 @@
 /**End of General Formatting**/
 
 /**Font Faces**/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
 @font-face {
     font-family: 'Goldman-Bold';
     src: url(../fonts/Goldman-Bold.ttf);
@@ -119,6 +121,46 @@ header i {
 }
 /**End of Home Section Formatting**/
 
+/**About Section Formatting**/
+.aboutFormat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    background-color: #f8fbfc;
+}
+
+/*Format about section h2 tag*/
+.aboutFormat h2 {
+    font-size: 6em;
+    font-family: sans-serif;
+    font-weight: bolder;
+    margin-bottom: 50px;
+}
+
+/*Format about section h2 span tag*/
+.aboutFormat h2 span {
+    color: lightcoral;
+}
+
+/*Format creator img container*/
+.imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+/*Format creator img*/
+.creatorFormat {
+    max-width: 70%;
+    height: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/**End of About Section Formatting**/
+
 /**Education Section Formatting**/
 .educationFormat {
     display: flex;
@@ -141,6 +183,85 @@ header i {
     color: lightcoral;
 }
 
+
+/*Format timeline container*/
+.timelineContainer {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.timelineContainer::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: lightcoral;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+/*Format timeline item*/
+.container {
+    position: relative;
+    background-color: inherit;
+    padding: 10px 20px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: lightcoral;
+    border: 3px solid white;
+    border-radius: 50%;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+/*Format timeline content*/
+.timelineContent {
+    width: 100%;
+    padding: 15px;
+    background-color: lightcoral;
+    color: white;
+    border-radius: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*Format timeline content h3 tag*/
+.timelineContent h3 {
+    margin-top: 20px;
+    font-size: 4em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+/*Format timeline content h4 tag*/ 
+.timelineContent h4 {
+    margin-top: 20px;
+    font-size: 2em;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    letter-spacing: 2px;
+    line-height: 2;
+}
 /**End of Education Section Formatting**/
 
 /**Services Section Formatting**/
@@ -200,7 +321,7 @@ header i {
 /*Format grid service item h3 tag*/
 .serviceGridItem h3 {
     font-size: 4em;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
     letter-spacing: 2px;
     font-weight: bolder;
     margin-bottom: 50px;
@@ -210,7 +331,7 @@ header i {
 /*Format grid service item p tag*/
 .serviceGridItem p {
     font-size: 2.1em;
-    font-family: monospace;
+    font-family: 'Poppins', sans-serif;
     font-weight: bolder;
     letter-spacing: 2px;
     line-height: 2;

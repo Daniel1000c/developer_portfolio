@@ -1,3 +1,7 @@
+/**Import fonts**/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+/**End of Import fonts**/
+
 /**General Formatting**/
 * {
     margin: 0;
@@ -7,7 +11,7 @@
 /**End of General Formatting**/
 
 /**Font Faces**/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
 
 @font-face {
     font-family: 'Goldman-Bold';
@@ -121,6 +125,29 @@ header i {
 }
 /**End of Home Section Formatting**/
 
+/**My Portfolio Section Formatting**/
+.portfolioFormat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+}
+
+/*Format portfolio section h2 tag*/
+.portfolioFormat h2 {
+    font-size: 6em;
+    font-family: sans-serif;
+    font-weight: bolder;
+    margin-bottom: 50px;
+}
+
+/*Format portfolio section h2 span tag*/
+.portfolioFormat h2 span {
+    color: lightcoral;
+}
+/**End of My Portfolio Section Formatting**/
+
 /**About Section Formatting**/
 .aboutFormat {
     display: flex;
@@ -183,7 +210,6 @@ header i {
  font-size: 1.5em;
  font-weight: bolder;
 }
-
 /**End of About Section Formatting**/
 
 /**Education Section Formatting**/

@@ -205,7 +205,6 @@ header i {
     align-items: center;
     flex-direction: column;
     padding: 40px;
-    background-color: #f8fbfc;
 }
 
 /*Format about section h2 tag*/
@@ -450,6 +449,7 @@ header i {
     align-items: center;
     flex-direction: column;
     padding: 40px;
+    background-color: #f8fbfc;
 }
 
 

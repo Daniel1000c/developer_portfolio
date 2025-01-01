@@ -146,6 +146,56 @@ header i {
 .portfolioFormat h2 span {
     color: lightcoral;
 }
+
+/*Format portfolio grid container*/
+.portfolioGridContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+/*Format portfolio grid items*/
+.portfolioGridItem {
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+    flex-direction: column;
+    padding: 40px;
+}
+
+/*Format portfolio grid items img*/
+.portfolioImgContainer {
+    background-color: lightcoral;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.portfolioImgContainer img{
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*Format portfolio grid items h3*/
+.portfolioTitleContainer h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 5em;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+/*Format portfolio grid items p*/
+.portfolioTitleContainer p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
 /**End of My Portfolio Section Formatting**/
 
 /**About Section Formatting**/

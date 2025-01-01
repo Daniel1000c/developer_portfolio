@@ -8,6 +8,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/*Format link scrolling behavior*/
+html {
+    scroll-behavior: smooth;
+}
 /**End of General Formatting**/
 
 /**Font Faces**/
@@ -83,6 +88,55 @@ header i {
     color: lightcoral;
 }
 
+
+/*Hide nav menu on mobile*/
+#navMenu {
+    position: fixed;
+    top: 0;
+    right: -600px;
+    width: 600px;
+    height: 100%;
+    background-color: white;
+    z-index: 1001;
+    opacity: 0;
+    transition: right 0.7s ease-in, opacity 0.7s ease-in;
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Apply blur to the area behind the element */
+}
+
+/*Format nav list*/
+#navMenu ul {
+    list-style: none;
+}
+
+/*Format nav list items*/
+#navMenu ul li {
+    text-align: center;
+    margin: 10px 0;
+}
+
+/*Format nav list links*/
+#navMenu ul li a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 5em;
+    color: lightcoral;
+}
+
+/*Format menu icon*/
+#menuIcon {
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    z-index: 1002;
+}
+
+/*Show nav menu when menu icon is clicked*/
+#navMenu.active {
+    display: block;
+    right: 0;
+    opacity: 1;
+}
 /**End of Header Formatting**/
 
 /**Home Section Formatting**/

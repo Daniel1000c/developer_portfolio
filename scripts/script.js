@@ -3,8 +3,17 @@
 //Get the button id
 let myBtn = document.getElementById("myBtn");
 
-//When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+//Get header element
+const header = document.querySelector("header");
+
+//Get offset height of header
+const sticky = header.offsetTop;
+
+//When the user scrolls, call the scroll and sticky functions
+window.onscroll = function () {
+    scrollFunction();
+    stickyHeader();
+}
 
 //Create scroll function
 function scrollFunction() {
@@ -20,6 +29,16 @@ function topFunction () {
     document.body.scrollTop = 0;// For safari browsers
     document.documentElement.scrollTop = 0; // For chrome, firefox, IE and Opera browsers
 }
+
+//Create sticky header function
+function stickyHeader() {
+    if (window.scrollY > sticky) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
+}
+
 
 //Create nav menu toggle function
 
@@ -55,3 +74,5 @@ document.addEventListener("click", (e) => {
 navMenu.addEventListener("click", (e) => {
     e.stopPropagation();
 });
+
+

@@ -65,7 +65,11 @@ header {
     /*Create fade down animation*/
     animation: fadeDown 1s ease;
     background-color: white;
+    /*Create smooth transition*/
+    transition: 0.5s ease;
 }
+
+
 
 /*Format header h1 tag*/
 header h1{
@@ -146,9 +150,7 @@ header i {
     align-items: center;
     flex-direction: column;
     padding: 40px;
-    background-image: 
-        linear-gradient(rgba(0, 0, 255, 0.3), rgba(0, 0, 255, 0.3)),
-        url(../images/creatorImg.jpg);
+    background-image: url(../images/darkBackgroundHeader.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -167,7 +169,6 @@ header i {
 /*Format home section h2 span tag*/
 .homeFormat h2 span {
     color: lightcoral;
-    font-family: monospace;
 }
 
 /*Format home section button link*/
@@ -461,9 +462,12 @@ header i {
 
 /*Format grid service item*/
 .serviceGridItem {
-    background-color: darkgray;
     border-radius: 8px;
     padding: 40px;
+    background-image: url(../images/darkCardTheme.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 /*Format grid service item icon*/
@@ -716,7 +720,8 @@ header i {
 .contactContainer input[type="submit"]:hover {
     background-color: white;
     color: lightcoral;
-    border: 5px solid lightcoral;
+    border: 1px solid lightcoral;
+    font-weight: bolder;
 }
 
 /*Format creator information headers*/
@@ -803,7 +808,7 @@ footer a {
 
 /*Format footer link hover*/
 footer a:hover {
-    color: red;
+    color: lightcoral;
 }
 /**End of Footer Formatting**/
 
@@ -904,3 +909,237 @@ footer a:hover {
     background-color: #555;
 }
 /**End of Scroll to top button formatting**/
+
+
+/**Media Queries**/
+
+/*tablet media query*/
+@media screen and (min-width: 768px) and (max-width: 900px) {
+    /*Home section Formatting*/
+    .homeFormat {
+        height: 40vh;
+    }
+
+    /*Format home section title*/
+    .homeFormat h2 {
+        font-size: 3.5em;
+    }
+
+    /*Format home section button*/
+    .homeFormat .btn-primary {
+       font-size: larger;
+       width: 250px;
+    }
+}
+
+/*Desk top media query*/
+@media screen and (min-width: 1000px) {
+   /*Header formatting*/
+   header h1 {
+       font-size: 4em;
+       width: 100%;
+   }
+
+    /*Create sticky background color when scrolling*/
+    header.sticky {
+        color: white;
+        background-color: rgba(0,0,0,0.8);
+        backdrop-filter: blur(10px);
+    }
+
+    /*Nav bar formatting*/
+
+    /*Hide hamburger menu*/
+    #menuIcon {
+        display: none;
+    }
+
+    /*Make nav bar static*/
+    #navMenu {
+        position: sticky;
+        top: 0;
+        background-color: transparent;
+        backdrop-filter: none;
+        justify-content: center;
+        opacity: 1;
+        right: 0;
+        width: 100%;
+    }
+
+    /*Format nav bar list for desktop horizontal layout*/
+    #navMenu ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*Format nav bar list items for desktop horizontal layout*/
+    #navMenu ul li {
+        margin: 0 20px;
+    }
+
+    /*Format nav bar links for desktop horizontal layout*/
+    #navMenu ul li a {
+        font-size: 1.5em;
+        transition: 0.5s ease;/*Create smooth hover transition*/
+        width: 100%;
+    }
+
+    /*Format nav bar links hover for desktop horizontal layout*/
+    #navMenu ul li a:hover {
+        background-color: white;
+        padding: 10px;
+        border-radius: 25px;
+    }
+    
+    /*Home section Formatting*/
+    .homeFormat {
+        height: 100vh;
+    }
+
+    /*Format home section title*/
+    .homeFormat h2 {
+        font-size: 5em;
+        margin-bottom: 100px;
+    }
+
+    /*About section formatting*/
+    .aboutContainer {
+       display: flex;
+    }
+
+    /*Format about section creator img*/
+    .aboutContainer .imgContainer img {
+        width: 900px;
+    }
+
+    /*Format about section text*/
+    .aboutText {
+        font-size: 1.5em;
+    }
+
+    /*Services section Formatting*/
+    .servicesGrid {
+        display: grid;
+        /*Create a grid with 3 columns and 2 rows*/
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 50px;
+    }
+
+    /*Format grid items*/
+    .servicesGrid .serviceGridItem {
+        padding: 0;
+        transition: 0.5s ease;/*Create smooth hover transition*/
+    }
+
+    /*Create grid item hover effect*/
+    .servicesGrid .serviceGridItem:hover {
+        transform: scale(1.1);
+        border: 3px solid #1E90FF;
+    }
+
+    /*Format services grid icon*/
+    .servicesGrid .serviceGridItem i {
+        font-size: 5em;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+
+    /*Format services grid title*/
+    .servicesGrid .serviceGridItem h3 {
+        font-size: 2em;
+        padding-left: 10px;
+    }
+
+    /*Format services grid description*/
+    .servicesGrid .serviceGridItem p {
+        font-size: 15px;
+        padding-left: 10px;
+    }
+
+    /*Format education section*/
+    
+    /*Format timeline items*/
+    .timelineContent{
+        font-size: 10px;
+    }
+
+    /*Portfolio section Formatting*/
+    .portfolioGridContainer {
+        display: grid;
+        /*Create a grid with 3 columns and 2 rows*/
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 50px;
+    }
+
+    /*Format grid items*/
+    
+    
+
+    /*Format grid item title*/
+    .portfolioTitleContainer h3 {
+        margin-top: 10px;
+        font-size: 2em;
+    }
+
+    /*Format grid item description*/
+    .portfolioTitleContainer p {
+        font-size: 20px;
+    }
+
+    /*Contact section Formatting*/
+    .contactContainer {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 200px;
+    }
+
+    /*Format creator info social media links*/
+    .socials {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    /*Format creator info social media icons*/
+    .contactContainer .creatorInfo .socials a i {
+        font-size: 1em;
+        border: 2px solid black;
+    }
+
+    /*Format creator info social media icons hover*/
+    .contactContainer .creatorInfo .socials a i:hover {
+        border: 2px solid lightcoral;
+    }
+
+    /*Format contact form labels*/
+    .contactForm label {
+        font-size: 1.5em;
+    }
+
+    /*Format contact form inputs*/
+    .contactForm input[type="text"],
+    .contactForm input[type="email"],
+    .contactForm input[type="tel"],
+    .contactForm textarea {
+        font-size: 2em;
+    }
+
+    /*Format select input container*/
+    .contactForm select {
+        font-size: 1em;
+        height: 100%;
+    }
+
+    /*Format submit button*/
+    .contactForm input[type="submit"] {
+        font-size: 1.5em;
+        width: 100%;
+    }
+    
+
+}
+
+/**End of Media Queries**/

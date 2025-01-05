@@ -1153,6 +1153,12 @@ footer a:hover {
     }
     
 
+    /*Format privacy policy*/
+    .privacy {
+        padding: 40px;
+    }
+    
+
 }
 
 /**End of Media Queries**/

@@ -28,3 +28,14 @@ I've been coding consistently for more than 2 years now and just got introduced 
 
 
 <a href="https://github.com/daniel1000c" align="left"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=daniel1000c&langs_count=10&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&locale=en&custom_title=Top%20%Languages" alt="Top Languages" /></a>
+
+
+### Projects
+
+<img src="images/browardRescuePortfolioPic.png" alt="Broward Rescue" width="800" />
+<img src="images/browardPawnPortfolioPic.png" alt="Broward Pawn" width="800" />
+<img src="images/cloudWarePortfolioPic.png" alt="Cloud Ware" width="800" />
+<img src="images/fitFocus.png" alt="Fit Focus" width="800" />
+<img src="images/zenGardenPortfolioPic.png" alt="Zen Garden" width="800" />
+<img src="images/browardVillasPortfolioPic.png" alt="Broward Villas" width="800" />
+

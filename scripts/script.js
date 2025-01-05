@@ -76,3 +76,27 @@ navMenu.addEventListener("click", (e) => {
 });
 
 
+//Select only sections with scrollAppear class
+const appearScrollSections = document.querySelectorAll('.scrollAppear');
+
+//Create new observer
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            //Add appear class to element
+            entry.target.classList.add('appear');
+            //Stop observing the element
+            observer.unobserve(entry.target);
+        } 
+    });
+}, {
+    threshold: 0.1
+});
+
+//Start observing each element
+appearScrollSections.forEach(section => {
+    observer.observe(section);
+});
+
+
+

@@ -13,6 +13,19 @@
 html {
     scroll-behavior: smooth;
 }
+
+/*Create section appear format*/
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/*Create section appear animation*/
+section.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
 /**End of General Formatting**/
 
 /**Font Faces**/

@@ -833,6 +833,7 @@ footer a:hover {
     align-items: center;
     flex-direction: column;
     background-color: #f8fbfc;
+    padding: 40px;
 }
 
 /*Format privacy headers*/
@@ -878,7 +879,6 @@ footer a:hover {
     font-family: sans-serif;
     margin-bottom: 50px;
     text-align: left;
-    letter-spacing: 2px;
     line-height: 1.5;
 }
 

@@ -93,16 +93,16 @@ header h1{
 
 /*Format header h1 span tag*/
 header h1 span {
-    color: lightcoral;
+    color: #2374ab;
 }
 
 /*Format menu i tag*/
 header i {
     font-size: 6em;
     cursor: none;
-    border: 5px solid lightcoral;
+    border: 5px solid #2374ab;
     border-radius: 8px;
-    color: lightcoral;
+    color: #2374ab;
 }
 
 
@@ -137,7 +137,7 @@ header i {
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-size: 5em;
-    color: lightcoral;
+    color: #2374ab;
 }
 
 /*Format menu icon*/
@@ -181,7 +181,7 @@ header i {
 
 /*Format home section h2 span tag*/
 .homeFormat h2 span {
-    color: lightcoral;
+    color: #2374ab;
 }
 
 /*Format home section button link*/
@@ -212,7 +212,7 @@ header i {
 
 /*Format portfolio section h2 span tag*/
 .portfolioFormat h2 span {
-    color: lightcoral;
+    color: #2374ab;
 }
 
 /*Format portfolio grid container*/
@@ -234,7 +234,7 @@ header i {
 
 /*Format portfolio grid items img*/
 .portfolioImgContainer {
-    background-color: lightcoral;
+    background-color: #2374ab;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
@@ -285,7 +285,7 @@ header i {
 
 /*Format about section h2 span tag*/
 .aboutFormat h2 span {
-    color: lightcoral;
+    color: #2374ab;
 }
 
 /*Format creator img container*/
@@ -323,7 +323,7 @@ header i {
 /*Format about text quotes in span tag*/
 .aboutText p span {
  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
- color: lightcoral;
+ color: #2374ab;
  font-size: 1.5em;
  font-weight: bolder;
 }
@@ -348,7 +348,7 @@ header i {
 
 /*Format education section h2 span tag*/
 .educationFormat h2 span {
-    color: lightcoral;
+    color: #2374ab;
 }
 
 
@@ -367,7 +367,7 @@ header i {
     content: '';
     position: absolute;
     width: 4px;
-    background-color: lightcoral;
+    background-color: #2374ab;
     top: 0;
     bottom: 0;
     left: 50%;
@@ -392,7 +392,7 @@ header i {
     position: absolute;
     width: 20px;
     height: 20px;
-    background-color: lightcoral;
+    background-color: #2374ab;
     border: 3px solid white;
     border-radius: 50%;
     top: 20px;
@@ -405,7 +405,7 @@ header i {
 .timelineContent {
     width: 100%;
     padding: 15px;
-    background-color: lightcoral;
+    background-color: #2374ab;
     color: white;
     border-radius: 6px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -452,7 +452,7 @@ header i {
 
 /*Format services section h2 span tag*/
 .servicesFormat h2 span {
-    color: lightcoral;
+    color: #2374ab;
 }
 
 /*Format services section p tag*/
@@ -542,7 +542,7 @@ header i {
 
 /*Format section title span*/
 .skillsFormat h2 span {
-    color: lightcoral;
+    color: #2374ab;
 }
 
 
@@ -638,7 +638,7 @@ header i {
     font-size: 3em;
     font-family: monospace;
     font-weight: bolder;
-    color: lightcoral;
+    color: #2374ab;
     letter-spacing: 2px;
     margin-top: 20px;
 }
@@ -665,7 +665,7 @@ header i {
 
 /*Format section title span*/
 .contactFormat h2 span {
-    color: lightcoral;
+    color: #2374ab;
 }
 
 /*Format contact container*/
@@ -721,7 +721,7 @@ header i {
     border-radius: 8px;
     border: none;
     margin-bottom: 20px;
-    background-color: lightcoral;
+    background-color: #2374ab;
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -732,8 +732,8 @@ header i {
 /*Format form submit button hover*/
 .contactContainer input[type="submit"]:hover {
     background-color: white;
-    color: lightcoral;
-    border: 1px solid lightcoral;
+    color: #2374ab;
+    border: 1px solid #2374ab;
     font-weight: bolder;
 }
 
@@ -770,7 +770,7 @@ header i {
 
 /*Format creator information a links hover*/
 .contactContainer .creatorInfo a:hover {
-    color: lightcoral;
+    color: #2374ab;
 }
 
 /*Format social media links*/
@@ -796,8 +796,8 @@ header i {
 
 /*Format social media links hover*/
 .contactContainer .creatorInfo .socials a:hover i {
-    color: lightcoral;
-    border: 5px solid lightcoral;
+    color: #2374ab;
+    border: 5px solid #2374ab;
 }
 /**End of Contact Information Formatting**/
 
@@ -821,7 +821,7 @@ footer a {
 
 /*Format footer link hover*/
 footer a:hover {
-    color: lightcoral;
+    color: #2374ab;
 }
 /**End of Footer Formatting**/
 
@@ -870,7 +870,7 @@ footer a:hover {
 }
 
 .privacy h1, .privacy h2,  .privacy h3, .privacy h4 {
-    color: lightcoral;
+    color: #2374ab;
 }
 
 /*Format privacy p tag*/
@@ -905,7 +905,7 @@ footer a:hover {
     z-index: 99;
     border: none;
     outline: none;
-    background-color: lightcoral;
+    background-color: #2374ab;
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -956,7 +956,7 @@ footer a:hover {
     /*Create sticky background color when scrolling*/
     header.sticky {
         color: white;
-        background-color: rgba(0,0,0,0.8);
+        background-color: #d3d3d3cc;
         backdrop-filter: blur(10px);
     }
 
@@ -1124,7 +1124,7 @@ footer a:hover {
 
     /*Format creator info social media icons hover*/
     .contactContainer .creatorInfo .socials a i:hover {
-        border: 2px solid lightcoral;
+        border: 2px solid #2374ab;
     }
 
     /*Format contact form labels*/

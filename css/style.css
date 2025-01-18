@@ -476,18 +476,18 @@ header i {
 /*Format grid service item*/
 .serviceGridItem {
     border-radius: 8px;
+    border: 5px solid #4056f4;
     padding: 40px;
-    background-image: url(../images/darkCardTheme.jpg);
+    background-image: url(../images/monochrome.jpg);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
 }
 
 /*Format grid service item icon*/
 .serviceGridItem i {
     font-size: 12em;
     margin-bottom: 40px;
-    color: #FF6333;
+    color: #22162b;
 }
 /*Format grid service item h3 tag*/
 .serviceGridItem h3 {
@@ -496,7 +496,7 @@ header i {
     letter-spacing: 2px;
     font-weight: bolder;
     margin-bottom: 50px;
-    color: #FF6333;
+    color: #22162b;
 }
 
 /*Format grid service item p tag*/
@@ -506,7 +506,7 @@ header i {
     font-weight: bolder;
     letter-spacing: 2px;
     line-height: 2;
-    color: #FF6333;
+    color: #22162b;
     text-align: left;
 }
 /**End of Services Section Formatting**/

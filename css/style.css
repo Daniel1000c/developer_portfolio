@@ -62,13 +62,6 @@ section h2 {
     margin: 10px 0px 10px 0px;
 }
 
-/*Format section title icon*/
-section h2 i {
-    font-size: 1.5em;
-    margin-left: 5px;
-    color: #0d6efd;
-}
-
 /**Home Section Formatting**/
 .homeSect {
     background-image: 

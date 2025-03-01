@@ -154,6 +154,13 @@ section h2 i {
     border-radius: 100px;
 }
 
+/**Services section Formatting**/
+
+/*Format img in services container*/
+.serviceSect img {
+    padding: 10px;
+}
+
 /**Skills Section Formatting**/
 
 /*Format progress bars*/

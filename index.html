@@ -368,6 +368,60 @@
             <section id="contact" class="contactSect">
                 <h2>Contact Us</h2>
                 
+                <!--Create contact container-->
+                <div class="contactContainer">
+                  <div class="contactText">
+
+                  </div>
+                  <div class="contactForm">
+
+                    <!--Create contact form-->
+                    <form action="" method="post">
+
+                      <!--Prompt user for name-->
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="john doe...">
+                        <label for="floatingInput">Full Name</label>
+                      </div>
+
+                      <!--Prompt user for email address-->
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="johndoe@gmail.com">
+                        <label for="floatingInput">Email Address</label>
+                      </div>
+
+                      <!--Prompt user for phone number-->
+                      <div class="form-floating mb-3">
+                        <input type="tel" class="form-control" id="floatingInput" placeholder="xxx-xxx-xxxx">
+                        <label for="floatingInput">Phone #</label>
+                      </div>
+
+                      <!--Prompt user for subject matter dropdown-->
+                      <div class="form-floating mb-3">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Choose a Subject</option>
+                          <option value="1">Web Site Design</option>
+                          <option value="2">Web Site Renovation</option>
+                          <option value="3">App Development</option>
+                          <option value="4">E-commerce Solutions</option>
+                          <option value="5">CMS Integration</option>
+                          <option value="6">UI/UX Design</option>
+                          <option value="7">Other</option>
+                        </select>
+                        <label for="floatingSelect">Subject</label>
+                      </div>
+
+                      <!--Prompt user for message-->
+                      <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                        <label for="floatingTextarea">Comments</label>
+                      </div>
+
+                      <!--Create submit button-->
+                      <input type="submit" value="Send">
+                    </form>
+                  </div>
+                </div>
             </section>
         </main>
         <footer>

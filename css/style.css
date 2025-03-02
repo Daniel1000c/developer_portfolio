@@ -259,6 +259,68 @@ section h2 {
 
 /**Contact Section Formatting**/
 
+/*Format contact info container*/
+.contactInfo {
+    display: flex;
+    justify-content: center;
+    align-items: normal;
+    flex-direction: column;
+    padding: 20px;  
+}
+
+/*Format contact info h3 tags*/
+.contactInfo h3 {
+    font-family: var(--title-font);
+    font-size: 1em;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    
+    text-decoration: underline;
+}
+
+/*Format contact info p tags*/
+.contactInfo p {
+    font-family: var(--body-text-font);
+    font-size: 1em;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+/*Format social media icons*/
+.socialMedia {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.socialMedia i {
+    font-size: 2em;
+    margin: 10px 0px 10px 0px;
+}
+
+/*Format icon colors*/
+.bi-linkedin {
+    color: #0a66c2;
+}
+
+.bi-twitter {
+    color: #1da1f2;
+}
+
+.bi-github {
+    color: #000000;
+}
+
+.bi-youtube {
+    color: #ff0000;
+}
+
+.bi-facebook {
+    color: #1877f2;
+}
 /*Format form*/
 .contactForm form {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);

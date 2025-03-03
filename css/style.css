@@ -344,3 +344,35 @@ section h2 {
     background-color: var(--bs-primary);
     color: white;
 }
+
+/**Footer Formatting**/
+
+/*Format footer social media icons*/
+.ms-3 i {
+    font-size: 2em;
+    margin: 10px 0px 10px 0px;
+}
+
+/*Format privacy policy container*/
+.privacyPolicyContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/*Format p tags*/
+.privacyPolicyContainer p {
+    font-family: var(--body-text-font);
+    font-size: 0.8em;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+/*Format privacy policy container links*/
+.privacyPolicyContainer a {
+    text-decoration: none;
+    color: black;
+}

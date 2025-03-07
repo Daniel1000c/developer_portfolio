@@ -34,6 +34,12 @@ html {
 /********************End of General Formatting********************/
 
 /********************Header Formatting********************/
+/*Make header sticky*/
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
 /*Format navbar brand item*/
 .navbar-brand{
@@ -432,4 +438,134 @@ section h2 {
 .privacyPolicyContainer a {
     text-decoration: none;
     color: white;
+}
+
+/********************End of Section Formatting*********************/
+
+/********************Create desktop media query********************/
+/*Create desktop media query*/
+@media screen and (min-width: 1200px) {
+
+    /**Section Formatting**/
+
+    /*Format section title*/
+    section h2 {
+        text-align: center;
+        font-family: var(--title-font);
+        font-weight: bolder;
+        margin: 35px 0px 35px 0px;
+        font-size: 2.5em;
+    }
+
+    /****Home Section Formatting**/
+
+    /*Format home section height*/
+    .homeSect {
+        height: 60vh;
+    }
+
+    /*Format home section text*/
+    .homeSect h2 {
+        font-size: 3em;
+    }
+
+    /*Format home section button*/
+    .homeSect a {
+        font-size: 3em;
+        width: 300px;
+        margin: 20px 0px 20px 0px;
+        transition: 0.5s ease;/*Create smooth transition*/
+    }
+
+    .homeSect a:hover {
+        background-color: white;
+        color: #0d6efd;
+    }
+
+    /**About Section Formatting**/
+
+    /*Format about container orientation*/
+    .aboutContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 100px;
+        margin: 0 auto;
+    }
+
+    /*Format about container img*/
+    .aboutContainer img {
+        width: 20%;
+    }
+
+    /*Format about text*/
+    .aboutContainer p {
+        font-size: 1.2em;
+        line-height: 2;
+        width: 50%;
+        letter-spacing: 2px;
+    }
+
+    /**Services Section Formatting**/
+
+    
+
+    /**Project Section Formatting**/
+
+    /*Format card width*/
+    .card {
+        width: 400px;
+    }
+
+    /*Format project card text size*/
+    .card h5 {
+        font-size: 1.9em;
+    }
+
+    .card p {
+        margin-bottom: 30px;
+    }
+
+    /*Format project card link size*/
+    .card a {
+       width: 150px;
+       font-size: 1.3em;
+    }
+
+    
+    /**Contact Section Formatting**/
+
+    /*Format contact container orientation*/
+    .contactContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 100px;
+    }
+
+    /*Format contact info*/
+    .contactInfo h3 {
+        font-size: 1.8em;
+    }
+
+    .contactInfo p {
+        font-size: 1.2em;
+    }
+
+    /*Format contact icons*/
+    .socialMedia i {
+        font-size: 3em;
+        transition: 0.5s ease;/*Create hover transition*/
+    }
+
+    .socialMedia i:hover {
+        color: purple;
+    }
+
+    /*Format width of form*/
+    .contactForm {
+        width: 20%;
+    }
 }

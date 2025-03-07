@@ -10,6 +10,8 @@
         <link href="https://cdn.jsdelivr.net/npm/boxicons/css/boxicons.min.css" rel="stylesheet"><!--Link to box icons external stylesheet-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"><!--Link to bootStrap css-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script><!--Link to bootStrap js-->
+        <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script><!--Link to  emailjs-->
+        <script src="scripts/script.js"></script> <!--Link to personal js-->
     </head>
     <body>
         <header>
@@ -422,30 +424,36 @@
                   <div class="contactForm">
 
                     <!--Create contact form-->
-                    <form action="" method="post">
+                    <form method="post" id="contactForm">
 
                       <!--Prompt user for name-->
                       <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="john doe...">
-                        <label for="floatingInput">Full Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="john doe...">
+                        <label for="name">Full Name</label>
                       </div>
 
                       <!--Prompt user for email address-->
                       <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="johndoe@gmail.com">
-                        <label for="floatingInput">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="johndoe@gmail.com">
+                        <label for="email">Email Address</label>
                       </div>
 
                       <!--Prompt user for phone number-->
                       <div class="form-floating mb-3">
-                        <input type="tel" class="form-control" id="floatingInput" placeholder="xxx-xxx-xxxx">
-                        <label for="floatingInput">Phone #</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="xxx-xxx-xxxx">
+                        <label for="phone">Phone #</label>
+                      </div>
+
+                      <!--Prompt user for date picker-->
+                      <div class="form-floating mb-3">
+                        <input type="date" class="form-control" id="date" name="date" placeholder="mm/dd/yyyy">
+                        <label for="date">Date</label>
                       </div>
 
                       <!--Prompt user for subject matter dropdown-->
                       <div class="form-floating mb-3">
-                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-                          <option selected>Choose a Subject</option>
+                        <select class="form-select" id="subject" name="subject" aria-label="Floating label select example">
+                          <option selected disabled>Choose a Subject</option>
                           <option value="1">Web Site Design</option>
                           <option value="2">Web Site Renovation</option>
                           <option value="3">App Development</option>
@@ -454,13 +462,13 @@
                           <option value="6">UI/UX Design</option>
                           <option value="7">Other</option>
                         </select>
-                        <label for="floatingSelect">Subject</label>
+                        <label for="subject">Subject</label>
                       </div>
 
                       <!--Prompt user for message-->
                       <div class="form-floating">
-                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                        <label for="floatingTextarea">Comments</label>
+                        <textarea class="form-control" placeholder="Leave a comment here" id="message" name="message"></textarea>
+                        <label for="message">Comments</label>
                       </div>
 
                       <!--Create submit button-->

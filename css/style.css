@@ -1,0 +1,68 @@
+/*******************Font Face Formatting*******************/
+
+/*Varela Round*/
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+/*Source Code Pro*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+/*******************End of Font Face Formatting*******************/
+
+/*******************Keyframe Formatting*******************/
+
+/*Create fade in animation*/
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/*******************End of Keyframe Formatting*******************/
+
+/*******************General Formatting*******************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Root Formatting*/
+:root {
+    --primary-text-font: 'Varela Round', sans-serif;
+    --button-color: #5371fe;
+    --primary-title-font: 'Source Code Pro', monospace;
+}
+/*******************End of General Formatting*******************/
+
+/*******************Section Formatting*******************/
+
+/**Header Section**/
+
+/**Format navbar brand text**/
+.navbar-brand {
+    font-family: var(--primary-title-font);
+    letter-spacing: 2px;
+}
+
+/**Home Section**/
+
+/*Format home section background*/
+.homeSect {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../images/homeBackground.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/*******************End of Section Formatting*******************/

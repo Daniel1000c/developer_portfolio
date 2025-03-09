@@ -6,6 +6,15 @@
 /*Source Code Pro*/
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
+/*Roboto Slab*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+/*Lora*/
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+/*Lato*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 /*******************End of Font Face Formatting*******************/
 
 /*******************Keyframe Formatting*******************/
@@ -28,16 +37,43 @@
     box-sizing: border-box;
 }
 
+/*Create smooth scroll behavior*/
+html {
+    scroll-behavior: smooth;
+}
+
 
 /*Root Formatting*/
 :root {
     --primary-text-font: 'Varela Round', sans-serif;
     --button-color: #5371fe;
     --primary-title-font: 'Source Code Pro', monospace;
+    --card-title-font: 'Roboto Slab', serif;
+    --card-text-font: 'Lora', serif;
+    --button-font: 'Lato', sans-serif;
+}
+
+/*Format site container*/
+.siteContainer {
+    max-width: 1200px;
 }
 /*******************End of General Formatting*******************/
 
 /*******************Section Formatting*******************/
+
+/**General section formatting**/
+section {
+    padding: 20px;
+}
+
+/*Format section title*/
+section h2 {
+    font-family: var(--primary-title-font);
+    font-weight: bolder;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    font-size: 2.3em;
+}
 
 /**Header Section**/
 
@@ -45,24 +81,46 @@
 .navbar-brand {
     font-family: var(--primary-title-font);
     letter-spacing: 2px;
+    text-transform: uppercase;
 }
 
 /**Home Section**/
 
-/*Format home section background*/
-.homeSect {
-    background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url(../images/homeBackground.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
+/**Project Section**/
+
+/*Format card title*/
+.card-title {
+    font-family: var(--card-title-font);
+    font-weight: bolder;
+    font-size: 1.6em;
+    letter-spacing: 2px;
+    color: whitesmoke;
+}
+
+/*Format card text*/
+.card-text {
+    font-family: var(--card-text-font);
+    line-height: 2;
+    color: white;
+}
+
+/*Format card button*/
+.card a {
+    font-family: var(--button-font);
+    font-weight: bolder;
+    display: inline-block;
+    width: 120px;
+    padding: 10px;
+    border-radius: 100px;
+    background: transparent;
+    border: 2px solid var(--button-color);
+    transition: 0.5s ease;/*Create bg color transition*/
+}
+
+/*Format card button hover*/
+.card a:hover {
+    background-color: var(--button-color);
+    border: 2px solid var(--button-color);
 }
 
 /*******************End of Section Formatting*******************/

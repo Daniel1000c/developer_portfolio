@@ -123,4 +123,83 @@ section h2 {
     border: 2px solid var(--button-color);
 }
 
+
+/**Contact Section**/
+
+/*Format contact info*/
+.contactInfo {
+    padding: 20px;
+}
+
+/*Format contact info a tag*/
+.contactInfo a {
+    text-decoration: none;
+    transition: 0.5s ease;/*Create bg color transition*/
+    color: #acb4bd;
+}
+
+/*Format email link hover*/
+.contactInfo a:hover {
+    color: var(--button-color);
+}
+
+/*Format media icons*/
+.socialMedia {
+    display: flex;
+    gap: 20px;
+    font-size: 3em;
+}
+
+/*Format github icon*/
+.bxl-github {
+    color: white;
+    transition: 0.5s ease;/*Create bg color transition*/
+}
+
+/*Format linkedin icon*/
+.bxl-linkedin-square {
+    color: white;
+    transition: 0.5s ease;/*Create bg color transition*/
+}
+
+/*Format icon hover*/
+.socialMedia i:hover {
+    color: var(--button-color);
+}
+
+/*Format contactForm container*/
+.contactForm {
+    padding: 20px;
+}
+
+/*Format form background*/
+.contactForm form {
+    background-color: #acb4bd;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/*Format contact form button*/
+.contactForm input[type="submit"] {
+    display: inline-block;
+    width: 150px;
+    padding: 10px;
+    font-family: var(--button-font);
+    font-size: 1.2em;
+    font-weight: bolder;
+    border-radius: 100px;
+    border: none;
+    background-color: var(--button-color);
+    color: white;
+    transition: 0.5s ease-in-out;/*Create hover transition*/
+}
+
+/*Format contact form button hover*/
+.contactForm input[type="submit"]:hover {
+    background: transparent;
+    color: var(--button-color);
+    border: 2px solid var(--button-color);
+}
+
 /*******************End of Section Formatting*******************/

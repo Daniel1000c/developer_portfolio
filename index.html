@@ -137,6 +137,81 @@
 
                 </div>
             </section>
+
+            <!--Create Contact Section-->
+            <section class="contactSect" id="contact">
+              <h2>Contact Us</h2>
+
+              <!--Create contact container-->
+              <div class="contactContainer">
+
+                <!--Create contact info-->
+                <div class="contactInfo">
+                  <h4>Email Address:</h4>
+                  <p><a href="mailto:velezdaniel6162@gmail.com">velezdaniel6162@gmail.com</a></p>
+
+                  <h4>Phone Number:</h4>
+                  <p>305-527-0765</p>
+
+                  <h4>Media Outlets</h4>
+                  <!--Create social media links-->
+                  <div class="socialMedia">
+                    <a href="https://www.facebook.com/daniel.velez.56" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/daniel-velez-8b3a3b1a7/" target="_blank"><i class='bx bxl-linkedin-square' ></i></a>
+                  </div>
+                </div>
+                <div class="contactForm">
+                  <!--Create Contact Form-->
+                  <form action="" method="post">
+                    <!--Prompt user for full name-->
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control" name="fullName" id="fullName" placeholder="John Doe....">
+                      <label for="fullName">Full Name</label>
+                    </div>
+
+                    <!--Prompt user for email address-->
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control" name="emailAddress" id="emailAddress" placeholder="user@example.com....">
+                      <label for="emailAddress">Email Address</label>
+                    </div>
+
+                    <!--Prompt user for phone number-->
+                    <div class="form-floating mb-3">
+                      <input type="tel" class="form-control" name="phoneNumber" id="phoneNumber" placeholder="xxx-xxx-xxxx....">
+                      <label for="phoneNumber">Phone Number</label>
+                    </div>
+
+                    <!--Prompt user for date-->
+                    <div class="form-floating mb-3">
+                      <input type="date" class="form-control" name="date" id="date">
+                      <label for="date">Date</label>
+                    </div>
+
+                    <!--Prompt user for select subject-->
+                    <div class="form-floating mb-3">
+                      <select class="form-select" name="subject" id="subject" aria-label="Floating label select example">
+                        <option selected disabled value="0">Select a Topic</option>
+                        <option value="1">Web Site Redesign</option>
+                        <option value="2">Web Site Development</option>
+                        <option value="3">Word Press Development</option>
+                        <option value="4">UI/UX Design</option>
+                        <option value="5">Other</option>
+                      </select>
+                      <label for="subject">Subject</label>
+                    </div>
+
+                    <!--Prompt user for message-->
+                    <div class="form-floating mb-3">
+                      <textarea class="form-control" name="message" placeholder="Enter your message here..." id="message" style="height: 100px"></textarea>
+                      <label for="message">Message</label>
+                    </div>
+
+                    <!--Create submit button-->
+                    <input type="submit" value="Submit">
+                  </form>
+                </div>
+              </div>
+            </section>
           </main>  
         </div>
         <footer>

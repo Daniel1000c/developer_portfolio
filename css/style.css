@@ -286,6 +286,93 @@ section h2 {
 }
 
 
+/**Skills Section**/
+
+/*Format skills container*/
+.skillsContainer {
+    padding: 20px;
+}
+
+/*Format skills icons*/
+.skillsContainer i {
+    font-size: 3em;
+}
+
+/*Format html icon color*/
+.bxl-html5{
+    color: #e34c26;
+}
+
+/*Format css icon color*/
+.bxl-css3{
+    color: #264de4;
+}
+
+/**Format javascript icon color*/
+.bxl-javascript{
+    color: #f7df1e;
+}
+
+/*Format bootstrap icon color*/
+.bxl-bootstrap{
+    color: #563d7c;
+}
+
+/*Format python icon color*/
+.bxl-python{
+    color: #3776ab;
+}
+
+/*Format git icon color*/
+.bxl-git{
+    color: #f1502f;
+}
+
+/*Format sql icon color*/
+.bxs-data{
+    color: lightblue;
+}
+
+/*Format react icon color*/
+.bxl-react{
+    color: #61dbfb;
+}
+
+/*Format jquery icon color*/
+.bxl-jquery{
+    color: #0769ad;
+}
+
+/*Format php icon color*/
+.bxl-php{
+    color: #777bb3;
+}
+
+/*Format wordpress icon color*/
+.bxl-wordpress{
+    color: #21759b;
+}
+
+/*Format vs code icon color*/
+.bxl-visual-studio{
+    color: #0078d7;
+}
+
+/*Format tailwind icon color*/
+.bxl-tailwind-css{
+    color: #38bdf8;
+}
+
+/*Format node icon color*/
+.bxl-nodejs{
+    color: #3c873a;
+}
+
+/*Format progress bar*/
+.progress {
+    margin: 5px 0 25px 0;
+}
+
 /**Project Section**/
 
 /*Format card title*/

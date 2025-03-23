@@ -1,0 +1,94 @@
+/****************Font Face Formatting****************/
+
+/*Varela Round*/
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+/*Montserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/****************End of Font Face Formatting****************/
+
+/****************General Formatting****************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*HTML Formatting*/
+html {
+    scroll-behavior: smooth;/*Smooth Scroll behavior*/
+}
+
+/*Body Formatting*/
+body {
+    background-image: url(../images/codeDropBg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*Root Formatting*/
+ :root {
+    --navbar-font: 'Varela Round', sans-serif;
+    --primary-font: 'Montserrat', sans-serif;
+ }
+
+/****************End of General Formatting****************/
+
+/****************Header Formatting****************/
+
+/**Navbar formatting**/
+
+/*Format navbar margin*/
+.navbar {
+    margin: 30px;
+    border-radius: 10px;
+}
+
+/*Increase navbar brand font*/
+.container-fluid a {
+    font-size: 3.8rem;
+}
+
+.navbar-brand {
+    font-family: var(--primary-font);
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+/*Format navbar brand span*/
+.navbar-brand span {
+    color: #610f7f;
+}
+
+/*Format nav items*/
+.nav-item {
+    font-size: 3.5rem;
+    font-family: var(--navbar-font);
+    letter-spacing: 2px;
+    margin: 0 10px;
+}
+
+/*Format menu icon*/
+.navbar-toggler-icon {
+    color: white;
+    font-size: 3.5rem;
+}
+/****************End of Header Formatting****************/
+
+/****************Section Formatting****************/
+
+/**Format hero section**/
+.heroSect {
+    background-color: red;
+    padding: 20px;
+    display: flex;
+    justify-content: left;
+    align-items: normal;
+    flex-direction: column;
+}
+
+/*Format hero img*/
+.heroImage img {
+    width: 400px;
+}

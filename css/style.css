@@ -70,6 +70,10 @@ body {
 }
 
 /*Format menu icon*/
+.navbar .navbar-toggler {
+    border: 5px solid black;
+}
+
 .navbar-toggler-icon {
     color: white;
     font-size: 3.5rem;
@@ -80,7 +84,6 @@ body {
 
 /**Format hero section**/
 .heroSect {
-    background-color: red;
     padding: 20px;
     display: flex;
     justify-content: left;
@@ -88,7 +91,80 @@ body {
     flex-direction: column;
 }
 
+/*Format heroContent margins*/
+.heroContent {
+    margin: 0 20px;
+}
+
+/*Format hero content text*/
+
+.heroContent h2, h4, p {
+    font-family: var(--primary-font);
+}
+
+/*Format h4 tag size*/
+.heroContent h4 {
+    display: inline-block;
+    width: auto;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 20px 0;
+    background-image: linear-gradient(to right top, #31124c, #3d2970, #424298, #3b5dc1, #127aeb);
+    padding: 50px;
+    border-radius: 10px;
+    color: white;
+}
+
+/*Format h2 tag size*/
+.heroContent h2 {
+    font-size: 6.5rem;
+    color: white;
+    font-weight: bolder;
+}
+
+/*Format p tag size*/
+.heroContent p {
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+    line-height: 2;
+    color: white;
+}
+
+/*Format lets connect link*/
+.heroContent a {
+    text-decoration: none;
+    font-family: var(--navbar-font);
+    font-size: 3rem;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin: 20px 0;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+}
+
+/*Format link icon to be in line with text*/
+.heroContent a i {
+    margin: 0 10px;
+    font-size: inherit;
+    border: 5px solid white;
+    border-radius: 50%;
+}
+
+/*Format hero img container*/
+.heroImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
 /*Format hero img*/
 .heroImage img {
-    width: 400px;
+    margin: 20px;
+    padding: 50px;
+    width: 80%;
+    border-radius: 50%;
+    border: 10px solid white;
 }

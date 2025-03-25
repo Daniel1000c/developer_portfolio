@@ -7,6 +7,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 /****************End of Font Face Formatting****************/
 
+/****************KeyFrame Formatting****************/
+
+/****************End of KeyFrame Formatting****************/
+
 /****************General Formatting****************/
 * {
     padding: 0;
@@ -168,3 +172,62 @@ body {
     border-radius: 50%;
     border: 10px solid white;
 }
+
+
+/**Skills Section Formatting**/
+.skillSect {
+    background-image: linear-gradient(to right top, #5811e0, #782ee6, #9346ed, #ab5df4, #c074fb);
+    padding: 60px;
+    display: flex;
+    justify-content: left;
+    align-items: normal;
+    flex-direction: column;
+    margin-top: 200px;
+}
+
+/*Format skills section content*/
+.skillContent {
+    width: 900px;
+    background-color: #310E68;
+    padding: 20px;
+    border-radius: 100px; 
+    position: relative;/*Format skills position to be in the center*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+
+/*Format skills content h2 tag*/
+.skillContent h2 {
+    font-family: var(--primary-font);
+    font-size: 8rem;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    text-align: center;
+    color: white;
+}
+
+/*Format skills content p tag*/ 
+.skillContent p {
+    font-family: var(--primary-font);
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    line-height: 2;
+    color: white;
+    text-align: center;
+}
+
+/*Center carousel items*/
+.carousel-item {
+    text-align: center;
+}
+
+/*Format carousel items h3 tags*/
+.carousel-item h3 {
+    font-family: var(--primary-font);
+    font-weight: bolder;
+    color: white;
+    font-size: 6rem;
+    letter-spacing: 2px;
+}
+

@@ -209,20 +209,20 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: linear-gradient(to right, #31124c, #300b33, #270920, #1b0510, #000000);
+    background-image: linear-gradient(to right top, #31124c, #50326c, #71538d, #9376b0, #b69ad4);
     padding: 20px;
     margin-top: 20px;
 }
 
 /*Format skillContent container*/
 .skillContent {
+    background-color: #d65db1;
     position: relative;
     transform: translateY(-50px);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #4a314d;
     border-radius: 10px;
     width: 300px;
     padding: 20px;
@@ -244,4 +244,19 @@ body {
     line-height: 2;
     color: var(--primary-font-color);
     text-align: center;
+}
+
+/*Format carousel item*/
+.carousel-item {
+    text-align: center;
+    padding: 40px;
+}
+
+/*Format carousel item h3 tag*/
+.carousel-item h3 {
+    font-family: var(--primary-text);
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
+    color: var(--primary-font-color);
 }

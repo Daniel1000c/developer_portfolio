@@ -316,12 +316,60 @@
                     <h2>Get in Touch</h2>
 
                     <!--Create contact form-->
-                    <form action="#" method="post">
-                      
+                    <form action="#" method="post" class="contactForm">
+                      <div class="row g-2">
+
+                        <!--Prompt user for first name-->
+                        <div class="col-md">
+                          <div class="form-floating">
+                            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="john...">
+                            <label for="firstName">First Name</label>
+                          </div>
+                        </div>
+
+                        <!--Prompt user for last name-->
+                        <div class="col-md">
+                          <div class="form-floating">
+                            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="doe...">
+                            <label for="lastName">Last Name</label>
+                          </div>
+                        </div>
+
+                        <!--Prompt user for Email address-->
+                        <div class="col-md">
+                          <div class="form-floating">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="johndoe413@gmail.com...">
+                            <label for="email">Email</label>
+                          </div>
+                        </div>
+
+                        <!--Prompt user for phone number-->
+                        <div class="col-md">
+                          <div class="form-floating">
+                            <input type="tel" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="xxx-xxx-xxxx">
+                            <label for="phoneNumber">Phone Number</label>
+                          </div>
+                        </div>
+
+                        <!--Prompt user message-->
+                        <div class="col-12">
+                          <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                              style="height: 100px"></textarea>
+                            <label for="floatingTextarea2">Message</label>
+                          </div>
+                        </div>
+
+                        <!--Create submit button-->
+                        <div class="col-12">
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+
+                      </div>
                     </form>
                   </div>
                    <div class="contactImg">
-
+                    <img src="images/contactUs.png" alt="Contact Us">
                   </div>
                 </section>
             </main>

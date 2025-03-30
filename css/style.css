@@ -306,3 +306,23 @@ body {
     font-weight: bolder;
     padding: 10px;
 }
+
+/*Format contact section*/
+.contactSect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 20px;
+    background-image: linear-gradient(to right bottom, #31124c, #300b33, #270920, #1b0510, #000000);
+}
+
+/*Format contact content h2 tag*/
+.contactContent h2 {
+    font-family: var(--primary-text);
+    font-size: 2rem;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    color: var(--primary-font-color);
+}

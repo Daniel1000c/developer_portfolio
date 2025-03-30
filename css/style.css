@@ -312,10 +312,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding: 20px;
-    margin-top: 20px;
-    background-image: linear-gradient(to right bottom, #31124c, #300b33, #270920, #1b0510, #000000);
+    background-image: linear-gradient(to right, #31124c, #461573, #5c169c, #7214c7, #890ef4);
 }
 
 /*Format contact content h2 tag*/
@@ -325,4 +324,38 @@ body {
     font-weight: bolder;
     letter-spacing: 5px;
     color: var(--primary-font-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/*Format contact form*/
+.contactForm {
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/*Format contact submit button*/
+.contactForm .btn {
+    margin-top: 15px;
+    border-radius: 0;
+    border: none;
+    font-family: var(--nav-text);
+    font-size: 1.1rem;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    background-color: #9376b0;
+    padding: 10px;
+}
+
+/*Format contact img*/
+.contactImg img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }

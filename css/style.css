@@ -359,3 +359,87 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+/*Footer formatting*/
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/*Format footer intro title*/
+.footerLogo {
+    font-family: var(--primary-text);
+    font-size: 1.4rem;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    color: var(--primary-font-color);
+    margin-bottom: 20px;
+}
+
+/*Format quick link container*/
+.qckLinkContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/*Format quick link item*/
+.qckLinkItem {
+    display: flex;
+    gap: 25px;
+    font-family: var(--primary-text);
+    font-size: 0.7rem;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    color: var(--primary-font-color);
+    margin-bottom: 5px;
+}
+
+/*Format quick link item link*/
+.qckLinkItem a {
+    font-family: monospace;
+    text-decoration: none;
+    color: var(--primary-font-color);
+}
+
+/*Format social media container*/
+.socialMediaLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/*Format social media link*/
+.socialMediaLinks a {
+    color: lightgray;
+    font-size: 2rem;
+}
+
+/*Format social media icons*/
+.socialMediaLinks a i {
+    border: 2px solid lightgray;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/*Format copy right text*/
+.copyright {
+    font-family: var(--primary-text);
+    font-size: 0.8rem;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    color: lightgray;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

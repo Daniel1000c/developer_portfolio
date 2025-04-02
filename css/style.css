@@ -261,6 +261,24 @@ body {
     color: var(--primary-font-color);
 }
 
+/*Format education Sect*/
+.educationSect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/*Format education section title*/
+.educationSect h2 {
+    font-family: var(--primary-text);
+    font-size: 2.3rem;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    color: var(--primary-font-color);    
+}
+
 /*Format projectSect*/
 .projectSect {
     display: flex;
@@ -454,9 +472,21 @@ footer {
 
     /*Have nav items in the center*/
     .navbar-nav {
+        display: flex;
         justify-content: center;
         align-items: center;
-        width: 75%;
+        width: 100%;
+    }
+
+
+    /*Format nav bar brand*/
+    .container-fluid .navbar-brand {
+        font-size: 1.6rem;
+    }
+
+    /*Format navbar items*/
+    .container-fluid a {
+        font-size: 0.9rem;
     }
 
     /*Hero section formatting*/

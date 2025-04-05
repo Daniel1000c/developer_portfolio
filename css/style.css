@@ -198,9 +198,7 @@ body {
 /*Format hero img img*/
 .heroImg img {
     width: 80%;
-    border: 2px solid white;
-    border-radius: 50%;
-    padding: 20px;
+    border-radius: 8px;
 }
 
 /*Format skillSect Container*/
@@ -268,6 +266,7 @@ body {
     align-items: center;
     flex-direction: column;
     padding: 20px;
+    background-image: linear-gradient(to right bottom, #31124c, #382769, #3a3c88, #3252a7, #146ac7);
 }
 
 /*Format education section title*/
@@ -277,6 +276,59 @@ body {
     font-weight: bolder;
     letter-spacing: 5px;
     color: var(--primary-font-color);    
+}
+
+/*Format education timeline*/
+.timeline {
+    border-left: 1px solid hsl(0, 0%, 90%);
+    position: relative;
+    list-style: none;
+    margin: 20px 0px 20px 0px;
+}
+  
+.timeline .timeline-item {
+    position: relative;
+}
+  
+.timeline .timeline-item:after {
+    position: absolute;
+    display: block;
+    top: 0;
+}
+  
+.timeline .timeline-item:after {
+    background-color: hsl(0, 0%, 90%);
+    left: -38px;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    content: "";
+}
+
+/*Format timeline content*/
+.timeline-item h5 {
+    color: white;
+    font-family: var(--primary-text);
+    font-size: 1.3rem;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+/*Format timeline text*/
+.timeline-item p {
+    font-family: var(--primary-text);
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+/*Format text muted color*/
+.timeline-item .text-muted {
+    color: var(--primary-font-color) !important;
+}
+
+/*Format education timeline sub heading*/
+.timeline-item .subHeading {
+    color: lightgray !important;
 }
 
 /*Format projectSect*/

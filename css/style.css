@@ -1,0 +1,66 @@
+/*****************Font Face Formatting*****************/
+
+/*Varela Round*/
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+/*****************End of Font Face Formatting*****************/
+
+/*****************Key Frame Formatting*****************/
+
+/*dropDown animation*/
+@keyframes dropDown {
+    0% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+/*****************End of Key Frame Formatting*****************/
+
+/*****************General Formatting*****************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/**Web Container Formatting**/
+#webContainer {
+    max-width: 1200px;
+    min-height: 100vh;
+    margin: 0 auto;
+}
+
+/**Create Root Formatting**/
+:root {
+    --nav-font: 'Varela Round', sans-serif;
+    --general-text-color: white;
+}
+
+/*****************End of General Formatting*****************/
+
+/*****************Section Formatting*****************/
+
+/**Header Formatting**/
+
+/*Create nav bar drop down animation*/
+.navbar {
+    animation: dropDown 1s ease;
+}
+
+/*Format navbar brand logo*/
+.navbar-brand img {
+    width: 45px;
+}
+
+/*Format navigation link text*/
+.nav-item {
+    font-family: var(--nav-font);
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+/*****************End of Section Formatting*****************/
+

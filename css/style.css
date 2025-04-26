@@ -35,6 +35,16 @@
     margin: 0 auto;
 }
 
+/*Create html smooth scrolling*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*Body Formatting*/
+body {
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+
 /**Create Root Formatting**/
 :root {
     --nav-font: 'Varela Round', sans-serif;
@@ -89,43 +99,100 @@
      color: transparent;
 }
 
-/*Format timeline section*/
-.timeline {
-    position: relative;
-    list-style: none;
-    margin: 20px 0px 20px 0px;
+/*Format timeline items*/
+.timelineItem {
+    background-color: #7f8ee0;
     display: flex;
+    justify-content: center;
+    align-items: normal;
     flex-direction: column;
-    gap: 20px;
-}
-  
-.timeline .timeline-item {
-    position: relative;
-    background-color: lightgray;
-    border-radius: 10px;
-    padding: 12px;
     margin: 20px 0px 20px 0px;
-    width: 100%;
-    flex-direction: column;
-    justify-content: space-between;
-    flex: 1;
-    min-height: 50px;
-    background-color: #5F66C4;
     color: var(--general-text-color);
+    font-family: var(--general-font);
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 20px;
 }
 
-/*Format*/
-  
-.timeline .timeline-item:after {
-    position: absolute;
-    display: block;
-    top: 0;
+/*Format timelineitem p*/
+.timelineItem p {
+    color: #3b41ae;
+    font-family: var(--general-font);
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/*Format timelineItem card title*/
+.timelineItem h5 {
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+/*Format timeline h6 class*/
+.timelineItem h6 {
+    color: lightgray;
+    font-family: var(--general-font);
+    font-size: 1.2rem;
 }
   
-
-
 /*****************End of Section Formatting*****************/
 
 /*****************Footer Formatting*****************/
+
+/*Center footer content*/
+footer {
+    background-color: #6495ED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/*Format img link*/
+footer a img {
+    margin: 0 auto;
+    width: 40%;
+}
+/*Format quicklinks container*/
+.quickLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+}
+
+/*Format quick link a tags*/
+.quickLinks a {
+    text-decoration: none;
+    color: var(--general-text-color);
+    font-family: var(--general-font);
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/*Format footer text*/
+footer p {
+    font-family: var(--general-font);
+    font-size: 0.8rem;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    color: var(--general-text-color);
+}
+
+/*Format footer span element*/
+footer p span {
+    color: lightgray;
+    font-weight: normal;
+}
 /*****************End of Footer Formatting*****************/
 

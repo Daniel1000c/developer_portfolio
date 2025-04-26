@@ -42,7 +42,7 @@ html {
 
 /*Body Formatting*/
 body {
-    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    background: linear-gradient(165deg, rgba(0, 157, 255, 1), #510080, rgba(0,0,0,1));
 }
 
 /**Create Root Formatting**/
@@ -61,11 +61,13 @@ body {
 /*Create nav bar drop down animation*/
 .navbar {
     animation: dropDown 1s ease;
+    align-items: center;
 }
 
 /*Format navbar brand logo*/
 .navbar-brand img {
     width: 45px;
+    object-fit: contain;
 }
 
 /*Format navigation link text*/
@@ -77,6 +79,21 @@ body {
     letter-spacing: 2px;
 }
 
+.navbar-nav {
+    align-items: center;
+}
+
+/*Format navbar link color*/
+.navbar-nav .nav-link {
+    color: white;
+    transition: color 0.5s ease;
+}
+
+/*Format navbar link hover color*/
+.navbar-nav .nav-link:hover {
+    color: lightblue;
+}
+
 /**About Section Formatting**/
 
   
@@ -86,4 +103,9 @@ body {
 
 
 /*****************End of Footer Formatting*****************/
+
+/*****************Media Query Formatting*****************/
+/*Desktop Media Query*/
+
+/*****************End of Media Query Formatting*****************/
 

@@ -116,10 +116,7 @@ body {
    font-weight: bolder;
    letter-spacing: 2px;
    padding: 10px;
-   background: #8F35CF;
-   background: linear-gradient(to right, #8F35CF 0%, #3AC6C4 100%);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
+   color: #8F35CF;
 }
 
 /*Format timeline items*/

@@ -102,7 +102,7 @@ body {
 
 /*Format about section background*/
 .aboutSection {
-    background-color: #3B41AE;
+    background-color: #03045e;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,4 +154,55 @@ body {
     letter-spacing: 2px;
     line-height: 1.5;
     color: #3B41AE;
+}
+
+/*************************End of Section Formatting*************************/
+
+/*************************Footer Formatting*************************/
+
+/*Format footer container*/
+footer {
+    background-color: #5171a5;
+}
+
+/*Format footer img*/
+footer img{
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+}
+
+/*Format footer text*/
+
+footer p {
+    font-family: monospace;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+}
+
+/*Format footer span*/
+footer span {
+    color: lightgray;
+    font-weight: normal;
+}
+
+/*Format quick links container*/
+.quickLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+/*Format quick link items*/
+.quickLinks a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--navbar-font);
+    font-weight: bold;
+    letter-spacing: 1px;
 }

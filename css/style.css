@@ -1,3 +1,25 @@
+/**************************Font Face Formatting*************************/
+
+/*Varela Round*/
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+/**************************End of Font Face Formatting*************************/
+
+/**************************Key Frame Formatting*************************/
+
+/*Fade Down Animation*/
+@keyframes fadeDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/**************************End of Key Frame Formatting*************************/
+
 /**************************General Formatting*************************/
 * {
     padding: 0;
@@ -9,4 +31,67 @@
 html {
     scroll-behavior: smooth;
 }
+
+/*Root Formatting*/
+:root {
+    --navbar-font: 'Varela Round', sans-serif;
+}
 /**************************End of General Formatting*************************/
+
+/**************************Header Formatting*************************/
+
+/*Format header*/
+header {
+    background-color: #003366 ;
+}
+
+/*Format nav bar animation*/
+.navbar {
+    animation: fadeDown 1s ease;/*Apply fadeDown animation*/
+}
+
+/*Format navbar brand*/
+.navbar-brand {
+    font-weight: bolder;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+/*Format nav bar span*/
+.navbar-brand span {
+    color: #ffa500;
+}
+
+/*Format nav bar toggler*/
+.navbar-toggler {
+    border: none;
+}
+
+/*Format focus color*/
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.75);
+}
+
+/*Format nav bar toggler icon*/
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/*Format active links*/
+.navbar-nav .nav-link.active {
+    font-weight: bolder;
+    font-size: 1.1rem;
+    color: lightpink;
+}
+
+/*Format navigation bar links*/
+.navbar-nav .nav-link {
+    font-family: var(--navbar-font);
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+}

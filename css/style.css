@@ -1,0 +1,12 @@
+/**************************General Formatting*************************/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Enable smooth scrolling*/
+html {
+    scroll-behavior: smooth;
+}
+/**************************End of General Formatting*************************/

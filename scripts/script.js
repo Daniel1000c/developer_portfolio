@@ -37,7 +37,19 @@ const header = `
 const footer = `
     <footer>
         <div class = "container">
-         &copy; 2025 All Rights Reserved Daniel Velez
+
+         <!--Insert company logo-->
+         <img src="images/portfolioLogoNoBg.png" alt="Daniel Velez: Creator of Portfolio" aria-label="Daniel Velez: Creator of Portfolio">
+
+         <!--Create quick links container-->
+         <div class = "quickLinks">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+         </div>
+
+         <p><span>&copy; 2025 All Rights Reserved</span> Daniel Velez</p>
         </div>
     </footer>
 `;

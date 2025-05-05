@@ -2,6 +2,10 @@
 
 /*Varela Round*/
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+/*Nunito*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 /**************************End of Font Face Formatting*************************/
 
 /**************************Key Frame Formatting*************************/
@@ -35,6 +39,7 @@ html {
 /*Root Formatting*/
 :root {
     --navbar-font: 'Varela Round', sans-serif;
+    --section-header-font: 'Nunito', sans-serif;
 }
 /**************************End of General Formatting*************************/
 
@@ -97,6 +102,38 @@ header {
 }
 /**************************End of Header Formatting*************************/
 
+/**************************Section Formatting*************************/
+/*Format sections*/
+section {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Format odd sections to be lighter color and have darker text*/
+section:nth-child(odd) {
+    background-color: #fff8f0;
+    color: #ffa500;
+}
+
+/*Format even sections to be darker color and have lighter text*/
+section:nth-child(even) {
+    background-color: #e0f7ff;
+    color: #ffa500;
+}
+
+/*Format Skills section heading*/
+.skills h2 {
+    text-align: center;
+    font-family: var(--section-header-font);
+    font-weight: bolder;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+/**************************End of Section Formatting*************************/
+
 /**************************Footer Formatting*************************/
 footer {
     text-align: center;
@@ -138,3 +175,4 @@ footer p span {
     color: lightgrey;
     font-weight: normal;
 }
+/**************************Footer Formatting*************************/

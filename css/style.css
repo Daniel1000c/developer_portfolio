@@ -6,6 +6,9 @@
 /*Nunito*/
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+/*Barlow*/
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /**************************End of Font Face Formatting*************************/
 
 /**************************Key Frame Formatting*************************/
@@ -40,6 +43,7 @@ html {
 :root {
     --navbar-font: 'Varela Round', sans-serif;
     --section-header-font: 'Nunito', sans-serif;
+    --section-text-font: 'Barlow', sans-serif;
 }
 /**************************End of General Formatting*************************/
 
@@ -124,12 +128,108 @@ section:nth-child(even) {
     color: #ffa500;
 }
 
+
 /*Format Skills section heading*/
 .skills h2 {
     text-align: center;
     font-family: var(--section-header-font);
     font-weight: bolder;
     font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+/*Format skills text*/
+.skills p {
+    text-align: center;
+    font-family: var(--section-text-font);
+    font-style: italic;
+    font-size: 0.9rem;
+    letter-spacing: 1.5px;
+}
+
+/*Format row*/
+.row {
+    text-align: center;
+}
+
+/*Format skill container*/
+.skill {
+    background-color: #a9a9a9;
+    border-radius: 10px;
+    display: inline-block;
+    width: 150px;
+    height: 140px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    transition: 0.5s ease-in;/*Color hover transition*/
+}
+
+/*Format skill icons*/
+.skill i {
+    font-size: 6rem;
+    color: #d3d3d3;
+    transition: 0.5s ease-in;/*Color hover transition*/
+}
+
+/*Format skill p tag*/
+.skill p {
+    font-family: var(--section-text-font);
+    font-weight: bolder;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    color: #d3d3d3;
+    transition: 0.5s ease-in;/*Color hover transition*/
+}
+
+/*Format skill background hover*/
+.skill:hover {
+    background-color: #d3d3d3;
+    border: 2px solid #2965f1;
+    box-shadow: #2965f1 0px 5px 15px;
+}
+
+/*Format skill text hover*/
+.skill:hover p {
+    color: #000000;
+}
+
+/*Format icons on hover*/
+
+/*HTML*/
+.skill:hover .bxl-html5 {
+    color: #e44d26;
+}
+
+/*CSS*/
+.skill:hover .bxl-css3 {
+    color: #2965f1;
+}
+
+/*JavaScript*/
+.skill:hover .bxl-javascript {
+    color: #f7df1e;
+}
+
+/*PHP*/
+.skill:hover .bxl-php {
+    color: #777bb4;
+}
+
+/*React*/
+.skill:hover .bxl-react {
+    color: #61dbfb;
+}
+
+/*Wordpress*/
+.skill:hover .bxl-wordpress {
+    color: #21759b;
+}
+
+/*Format skill h3*/
+.row h3 {
+    font-family: var(--section-text-font);
+    font-size: 1rem;
     letter-spacing: 2px;
 }
 /**************************End of Section Formatting*************************/

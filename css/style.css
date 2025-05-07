@@ -162,14 +162,14 @@ section:nth-child(even) {
     padding: 10px;
     margin: 10px;
     text-align: center;
-    transition: 0.5s ease-in;/*Color hover transition*/
+    transition: 0.5s ease-in-out;/*Color hover transition*/
 }
 
 /*Format skill icons*/
 .skill i {
     font-size: 6rem;
     color: #d3d3d3;
-    transition: 0.5s ease-in;/*Color hover transition*/
+    transition: 0.5s ease-in-out;/*Color hover transition*/
 }
 
 /*Format skill p tag*/
@@ -179,13 +179,13 @@ section:nth-child(even) {
     font-size: 1.2rem;
     letter-spacing: 2px;
     color: #d3d3d3;
-    transition: 0.5s ease-in;/*Color hover transition*/
+    transition: 0.5s ease-in-out;/*Color hover transition*/
 }
 
 /*Format skill background hover*/
 .skill:hover {
     background-color: #d3d3d3;
-    border: 2px solid #2965f1;
+    border: 5px solid #2965f1;
     box-shadow: #2965f1 0px 5px 15px;
 }
 

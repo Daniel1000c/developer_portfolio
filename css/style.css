@@ -128,7 +128,32 @@ section:nth-child(even) {
     color: #ffa500;
 }
 
+/*Format section headers*/
+.sectionHeader {
+    text-align: center;
+    margin: 10px;
+}
 
+/*Format section header h2 tag*/
+.sectionHeader h2 {
+    font-family: var(--section-header-font);
+    font-weight: bolder;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+/*Format section header p tag*/
+.sectionHeader p {
+    font-family: var(--section-text-font);
+    font-style: italic;
+    font-size: 0.9rem;
+    letter-spacing: 1.5px;
+}
+
+/**Services Section**/
+
+
+/**Skills Section**/
 /*Format Skills section heading*/
 .skills h2 {
     text-align: center;
@@ -232,6 +257,9 @@ section:nth-child(even) {
     font-size: 1rem;
     letter-spacing: 2px;
 }
+
+/**Contact Section**/
+
 /**************************End of Section Formatting*************************/
 
 /**************************Footer Formatting*************************/

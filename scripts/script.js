@@ -73,22 +73,32 @@ const footer = `
     </footer>
 `;
 
-//Create section page header path
-const path = window.location.pathname;
-const pageName = path.split("/").filter(Boolean).pop().replace(".html", "");
 
-//Capitalize first letter of page name
-const pageTitle = pageName.charAt(0).toUpperCase() + pageName.slice(1);
-
-//Create section page header
-const pageHeader = `
-    <section id="pageHeader">
-        <h2>${pageTitle}</h2>
-        <h6>Home &#8594; ${pageTitle}</h6>
-    </section>
-`;
 
 //Insert page header and footer into page
 
 document.getElementById('footer').innerHTML = footer;
-document.getElementById('pageHeader').innerHTML = pageHeader;
+
+
+const pageHeaderElement = document.getElementById('pageHeader');
+
+//Create if statement to see if page header exists on page
+if (pageHeaderElement) {
+    //Create section page header path
+    const path = window.location.pathname;
+    const pageName = path.split("/").filter(Boolean).pop().replace(".html", "");
+
+    //Capitalize first letter of page name
+    const pageTitle = pageName.charAt(0).toUpperCase() + pageName.slice(1);
+
+    //Create section page header
+    const pageHeader = `
+        <section id="pageHeader">
+            <h2>${pageTitle}</h2>
+            <h6>Home &#8594; ${pageTitle}</h6>
+        </section>
+    `;   
+    
+    //Insert page header into page
+    document.getElementById('pageHeader').innerHTML = pageHeader;
+}

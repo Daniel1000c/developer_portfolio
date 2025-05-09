@@ -299,6 +299,47 @@ section:nth-child(even) {
 
 /**Contact Section**/
 
+/*Format container header*/
+.containerHeader {  
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: normal;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+/*Format contact header h2 */
+.containerHeader h2 {
+    font-family: var(--section-header-font);
+    font-weight: bolder;
+    font-size: 2.6rem;
+    letter-spacing: 2px;
+}
+
+/*Format contact header p */
+.containerHeader p {
+    font-family: var(--section-text-font);
+    font-style: italic;
+    font-size: 0.95rem;
+    letter-spacing: 1.5px;
+}
+
+/*Format form*/
+.contactForm {
+    padding: 10px;
+}
+
+/*Format button Container*/
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin-top: 10px;
+}
+
 /**************************End of Section Formatting*************************/
 
 /**************************Footer Formatting*************************/
